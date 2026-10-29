@@ -1,0 +1,261 @@
+{
+  "title": "CAE: Browser-Native Representations for Web Agents",
+  "manuscriptDate": "2026-10-29",
+  "source": "Manuscript Figure 5 and Table 5",
+  "sourceSHA256": "eac2961111ef2aa0af14f1d6f71a6b846a034e973d645d0ae7939c605838987d",
+  "agents": [
+    {
+      "id": "jevfast",
+      "label": "Jev Ultrafast"
+    },
+    {
+      "id": "occam",
+      "label": "AgentOccam"
+    },
+    {
+      "id": "dom",
+      "label": "Browser Use"
+    },
+    {
+      "id": "agent_browser",
+      "label": "AgentBrowser"
+    },
+    {
+      "id": "ace",
+      "label": "CAE Agent"
+    }
+  ],
+  "models": [
+    {
+      "id": "glm-5.3",
+      "label": "GLM-5.3"
+    },
+    {
+      "id": "deepseek-v4.1-flash",
+      "label": "DeepSeek-v4.1-flash"
+    },
+    {
+      "id": "kimi-k3",
+      "label": "Kimi-k3"
+    },
+    {
+      "id": "gpt-6.1-sol",
+      "label": "GPT-6.1-sol"
+    }
+  ],
+  "cells": [
+    {
+      "agent": "jevfast",
+      "model": "glm-5.3",
+      "tasks": 197,
+      "successful": 35,
+      "successPercent": 17.766497461928935,
+      "costUSD": 0.008292821045685279,
+      "controllerSeconds": 179.651
+    },
+    {
+      "agent": "jevfast",
+      "model": "deepseek-v4.1-flash",
+      "tasks": 197,
+      "successful": 35,
+      "successPercent": 17.766497461928935,
+      "costUSD": 0.00518951592893401,
+      "controllerSeconds": 180.5620304568528
+    },
+    {
+      "agent": "jevfast",
+      "model": "kimi-k3",
+      "tasks": 197,
+      "successful": 36,
+      "successPercent": 18.274111675126903,
+      "costUSD": 0.011422775695431472,
+      "controllerSeconds": 184.8050507614213
+    },
+    {
+      "agent": "jevfast",
+      "model": "gpt-6.1-sol",
+      "tasks": 197,
+      "successful": 40,
+      "successPercent": 20.304568527918782,
+      "costUSD": 0.008088890162436548,
+      "controllerSeconds": 168.82795431472078
+    },
+    {
+      "agent": "occam",
+      "model": "glm-5.3",
+      "tasks": 197,
+      "successful": 41,
+      "successPercent": 20.81218274111675,
+      "costUSD": 0.026680584771573604,
+      "controllerSeconds": 1049.64338071066
+    },
+    {
+      "agent": "occam",
+      "model": "deepseek-v4.1-flash",
+      "tasks": 197,
+      "successful": 41,
+      "successPercent": 20.81218274111675,
+      "costUSD": 0.002591899137055838,
+      "controllerSeconds": 925.0320101522843
+    },
+    {
+      "agent": "occam",
+      "model": "kimi-k3",
+      "tasks": 197,
+      "successful": 55,
+      "successPercent": 27.918781725888326,
+      "costUSD": 0.08840496852791878,
+      "controllerSeconds": 1068.9934467005075
+    },
+    {
+      "agent": "occam",
+      "model": "gpt-6.1-sol",
+      "tasks": 197,
+      "successful": 52,
+      "successPercent": 26.395939086294415,
+      "costUSD": 0.054528390862944164,
+      "controllerSeconds": 1041.7350913705584
+    },
+    {
+      "agent": "dom",
+      "model": "glm-5.3",
+      "tasks": 197,
+      "successful": 50,
+      "successPercent": 25.380710659898476,
+      "costUSD": 0.16142875411167512,
+      "controllerSeconds": 675.8291878172589
+    },
+    {
+      "agent": "dom",
+      "model": "deepseek-v4.1-flash",
+      "tasks": 197,
+      "successful": 137,
+      "successPercent": 69.54314720812182,
+      "costUSD": 0.01968229192893401,
+      "controllerSeconds": 417.76348223350254
+    },
+    {
+      "agent": "dom",
+      "model": "kimi-k3",
+      "tasks": 197,
+      "successful": 143,
+      "successPercent": 72.58883248730965,
+      "costUSD": 0.27928376345177663,
+      "controllerSeconds": 421.5997918781726
+    },
+    {
+      "agent": "dom",
+      "model": "gpt-6.1-sol",
+      "tasks": 197,
+      "successful": 157,
+      "successPercent": 79.69543147208122,
+      "costUSD": 0.10500007766497461,
+      "controllerSeconds": 446.7712741116751
+    },
+    {
+      "agent": "agent_browser",
+      "model": "glm-5.3",
+      "tasks": 197,
+      "successful": 160,
+      "successPercent": 81.21827411167513,
+      "costUSD": 0.28890480954314723,
+      "controllerSeconds": 382.9842335025381
+    },
+    {
+      "agent": "agent_browser",
+      "model": "deepseek-v4.1-flash",
+      "tasks": 197,
+      "successful": 167,
+      "successPercent": 84.77157360406092,
+      "costUSD": 0.059230482081218276,
+      "controllerSeconds": 321.67727411167516
+    },
+    {
+      "agent": "agent_browser",
+      "model": "kimi-k3",
+      "tasks": 197,
+      "successful": 170,
+      "successPercent": 86.29441624365482,
+      "costUSD": 0.4659506741116751,
+      "controllerSeconds": 320.0414822335025
+    },
+    {
+      "agent": "agent_browser",
+      "model": "gpt-6.1-sol",
+      "tasks": 197,
+      "successful": 166,
+      "successPercent": 84.26395939086295,
+      "costUSD": 0.24563621827411167,
+      "controllerSeconds": 290.9096192893401
+    },
+    {
+      "agent": "ace",
+      "model": "glm-5.3",
+      "tasks": 197,
+      "successful": 165,
+      "successPercent": 83.75634517766497,
+      "costUSD": 0.13597407309644668,
+      "controllerSeconds": 387.38456345177667
+    },
+    {
+      "agent": "ace",
+      "model": "deepseek-v4.1-flash",
+      "tasks": 197,
+      "successful": 168,
+      "successPercent": 85.27918781725889,
+      "costUSD": 0.0107351607106599,
+      "controllerSeconds": 253.89196446700507
+    },
+    {
+      "agent": "ace",
+      "model": "kimi-k3",
+      "tasks": 197,
+      "successful": 172,
+      "successPercent": 87.30964467005076,
+      "costUSD": 0.29047711979695434,
+      "controllerSeconds": 282.4551878172589
+    },
+    {
+      "agent": "ace",
+      "model": "gpt-6.1-sol",
+      "tasks": 197,
+      "successful": 171,
+      "successPercent": 86.80203045685279,
+      "costUSD": 0.13310791218274112,
+      "controllerSeconds": 157.54586802030457
+    }
+  ],
+  "summary": {
+    "caeSuccesses": 676,
+    "agentBrowserSuccesses": 663,
+    "executionsPerAgent": 788,
+    "caeSuccessPercent": 85.78680203045685,
+    "agentBrowserSuccessPercent": 84.13705583756345,
+    "costReductionPercent": 46.184549649727956,
+    "caeSuccessRangePP": 3.55329949238579
+  },
+  "representation": [
+    {
+      "label": "Browser Use DOM",
+      "characters": 12667,
+      "tokens": 4171
+    },
+    {
+      "label": "AgentOccam",
+      "characters": 17565,
+      "tokens": 5717
+    },
+    {
+      "label": "CAE",
+      "characters": 8653,
+      "tokens": 3056
+    }
+  ],
+  "measurementNotes": [
+    "197 selected tasks per model-agent cell; success uses the full denominator. Evidence-unresolved cases count as failures under the paper reporting policy.",
+    "API costs combine recorded fees and frozen-tariff estimates; failed tasks are included.",
+    "Controller time includes setup, execution, evidence collection and cleanup.",
+    "Native action spaces and step definitions differ across systems.",
+    "Representation sizes cover 167 matched entry states using o200k_base; system prompts and tools are excluded."
+  ]
+}
