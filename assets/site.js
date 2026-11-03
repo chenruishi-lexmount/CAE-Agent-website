@@ -14,8 +14,8 @@ function setMetric(metric, focus=false) {
   panel.setAttribute('aria-labelledby',success?'tab-success':'tab-cost');
   const description=success?'Success rate (%) · higher is better':'Mean API cost per task (USD) · lower is better';
   document.getElementById('metric-description').textContent=description;
-  document.querySelector('.heatmap caption').textContent=`${description}. 197 selected task executions per model-agent cell.`;
-  document.querySelectorAll('.heatmap td').forEach(td=>{
+  document.querySelector('#results .heatmap caption').textContent=`${description}. 197 selected task executions per model-agent cell.`;
+  document.querySelectorAll('#results .heatmap td').forEach(td=>{
     const cell=data.cells.find(c=>c.agent===td.dataset.agent&&c.model===td.dataset.model);
     const value=success?cell.successPercent:cell.costUSD;
     td.style.background=color(success?value/100:(Math.log10(value)+3)/4);
@@ -61,3 +61,38 @@ document.querySelectorAll('[data-copy]').forEach(button=>button.addEventListener
   catch{const selection=window.getSelection(),range=document.createRange();range.selectNodeContents(code);selection.removeAllRanges();selection.addRange(range);button.textContent='Selected';}
   setTimeout(()=>button.textContent='Copy',1600);
 }));
+
+// Keep the two metric selectors independent while sharing the original palette.
+const ablationData=JSON.parse(document.getElementById('ablation-data').textContent);
+const ablationTabs=Array.from(document.querySelectorAll('[data-ablation-metric]'));
+function setAblationMetric(metric,focus=false){
+  const success=metric==='success';
+  ablationTabs.forEach(tab=>{const selected=tab.dataset.ablationMetric===metric;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;if(selected&&focus)tab.focus();});
+  document.getElementById('ablation-metric-panel').setAttribute('aria-labelledby',success?'ablation-tab-success':'ablation-tab-cost');
+  const description=success?'Success rate (%) · higher is better':'Mean API cost per task (USD) · lower is better';
+  document.getElementById('ablation-metric-description').textContent=description;
+  document.querySelector('#ablation .heatmap caption').textContent=`${description}. Separate interface ablation with 197 tasks per configuration.`;
+  document.querySelectorAll('#ablation .heatmap td').forEach(td=>{
+    const cell=ablationData.cells.find(c=>c.agent===td.dataset.ablationAgent&&c.model===td.dataset.ablationModel);
+    const value=success?cell.successPercent:cell.costUSD;
+    td.style.background=color(success?value/100:(Math.log10(value)+3)/4);
+    td.textContent=success?`${value.toFixed(1)}%`:`$${value.toFixed(value<.01?4:3)}`;
+    td.title=success?`${cell.successful}/${cell.tasks} successful tasks`:`$${value.toFixed(6)} mean comparison API cost per task`;
+  });
+  document.getElementById('ablation-legend-low').textContent=success?'0%':'$0.001';
+  document.getElementById('ablation-legend-high').textContent=success?'100%':'$10';
+  document.getElementById('ablation-legend-note').textContent=success?'Linear scale':'Log scale';
+}
+ablationTabs.forEach((tab,index)=>{
+  tab.addEventListener('click',()=>setAblationMetric(tab.dataset.ablationMetric));
+  tab.addEventListener('keydown',event=>{
+    let next=index;
+    if(event.key==='ArrowRight')next=(index+1)%ablationTabs.length;
+    else if(event.key==='ArrowLeft')next=(index-1+ablationTabs.length)%ablationTabs.length;
+    else if(event.key==='Home')next=0;
+    else if(event.key==='End')next=ablationTabs.length-1;
+    else return;
+    event.preventDefault();setAblationMetric(ablationTabs[next].dataset.ablationMetric,true);
+  });
+});
+setAblationMetric('success');
