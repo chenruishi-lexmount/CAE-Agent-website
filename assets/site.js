@@ -106,16 +106,11 @@ setAblationMetric('success');
   const byId=id=>document.getElementById(id);
   const dots=Array.from(root.querySelectorAll('[data-rep-index]'));
   const viewTabs=Array.from(root.querySelectorAll('[data-rep-view]'));
-  const motion=window.matchMedia('(prefers-reduced-motion: reduce)');
   const dialog=byId('rep-dialog');
-  let index=0,paused=motion.matches,hovered=false,focused=false,inView=false,timer=null;
+  let index=0,hovered=false,focused=false,inView=false,timer=null;
   function clock(){
     clearInterval(timer);timer=null;
-    const running=!paused&&!hovered&&!focused&&inView&&!document.hidden&&!dialog.open;
-    byId('rep-play-label').textContent=paused?'Play':'Pause';
-    byId('rep-play-icon').textContent=paused?'▷':'Ⅱ';
-    byId('rep-play').setAttribute('aria-label',paused?'Start automatic slideshow':'Pause automatic slideshow');
-    byId('rep-play').setAttribute('aria-pressed',String(paused));
+    const running=!hovered&&!focused&&inView&&!document.hidden&&!dialog.open;
     if(running)timer=setInterval(()=>show(index+1,false),9000);
   }
   function renderCode(target,text,cae){
@@ -149,17 +144,15 @@ setAblationMetric('success');
     if(announce)byId('rep-status').textContent=`${index+1} of ${examples.length}. ${sample.title}. Screenshot, DOM and CAE updated.`;
     clock();
   }
-  function manual(next){paused=true;show(next);}
+  function manual(next){show(next);}
   byId('rep-prev').addEventListener('click',()=>manual(index-1));
   byId('rep-next').addEventListener('click',()=>manual(index+1));
   dots.forEach((dot,i)=>dot.addEventListener('click',()=>manual(i)));
-  byId('rep-play').addEventListener('click',()=>{paused=!paused;clock();});
   root.addEventListener('mouseenter',()=>{hovered=true;clock();});
   root.addEventListener('mouseleave',()=>{hovered=false;clock();});
   root.addEventListener('focusin',()=>{focused=true;clock();});
   root.addEventListener('focusout',()=>{setTimeout(()=>{focused=root.contains(document.activeElement);clock();},0);});
   document.addEventListener('visibilitychange',clock);
-  motion.addEventListener('change',event=>{if(event.matches)paused=true;clock();});
   new IntersectionObserver(entries=>{inView=entries[0].isIntersecting;clock();},{threshold:.25}).observe(root);
   // Arrow navigation applies only to the carousel controls, preserving code scrolling.
   root.querySelectorAll('.rep-controls,.rep-dots').forEach(controls=>controls.addEventListener('keydown',event=>{
