@@ -1,0 +1,58 @@
+[66]<a />
+	Skip to content
+[73]<div />
+	[74]<div />
+		[75]<span id=hs_cos_wrapper_knowledgebase_header_language_switcher />
+		[76]<div />
+			[77]<div />
+				[78]<svg /> <!-- SVG content collapsed -->
+			[82]<span />
+				English
+			[83]<button expanded=false />
+				Show submenu for translations
+[89]<a />
+[90]<a />
+	Sign in
+[95]<a />
+	[7]<img />
+[134]<a />
+	Contact us
+[6]<section />
+	[135]<div id=hs_cos_wrapper_hs_kb-search-input-module />
+		[136]<div />
+			[137]<div />
+				[9]<form />
+					How can we help you?
+					|SHADOW(open)|[10]<input role=combobox aria-label=This is a search field with an auto-suggest feature attached. type=search id=hs_kb-search-input-module-input name=q autocomplete=list aria-autocomplete=list maxlength=1000 placeholder=Search for answers expanded=false />
+					[146]<button aria-label=Search />
+					[151]<div />
+						[152]<ul id=autocomplete-results role=listbox aria-label=term multiselectable=false />
+							[153]<li role=option selected=false />
+								There are no suggestions because the search field is empty.
+			[154]<div id=sr-messenger role=status live=polite />
+[158]<a />
+	Getting Started
+	Learn the basics of using LottieFiles, from creating your account to finding and using animations.
+[168]<a />
+	Subscriptions & Billing
+	Manage your account subscription plans and billing information.
+[177]<a />
+	Workspace Guide
+	Learn how to set up your workspace and start using the available tools effectively.
+[187]<a />
+	Lottie Creator
+	Create and edit Lottie animations using our web-based animation editor.
+[197]<a />
+	Design Plugins
+	Install and use LottieFiles plugins in Figma, After Effects, Canva, and many more design tools.
+[217]<a aria-label=Follow us on Twitter />
+[222]<a aria-label=Follow us on Instagram />
+[227]<a aria-label=Subscribe to us on YouTube />
+[232]<a aria-label=Email us />
+Copyright © 2026, LottieFiles
+[255]<div id=chatbase-message-bubbles role=status aria-label=Chatbot notifications live=polite />
+	[257]<ul role=list />
+		[258]<li role=listitem level=1 />
+			[259]<div role=alert live=assertive />
+				Hi! What can I help you with?
+[260]<button id=chatbase-bubble-button aria-label=Open expanded=false />

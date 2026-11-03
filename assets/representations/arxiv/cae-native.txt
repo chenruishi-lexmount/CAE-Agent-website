@@ -1,0 +1,531 @@
+[0|50|]Announcement
+[1|453|]Scheduled maintenance: Wednesday, October 28, 7:00 to 12:00 EDT (11:00 to 16:00 UTC).
+[1|53|click]Read more on our blog
+[1|54|click]{role=button cls="close"}
+[1|61|click]{url="/IgnoreMe"}
+[1|62|click]archive home
+[2|6|]archive
+[1|19|click]{url="/search"}
+[2|65|]Search
+[1|21|]Main navigation
+[2|71|click]Submit
+[2|22|click]Donate
+[2|24|click]Log in
+[0|12|]Search arXiv | Search papers by title, author, abstract, or ID...
+[1|83|]arXiv is a free distribution service and an open-access archive for more than 3.2 million\n      scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.\n      Materials on this site are not peer-reviewed by arXiv.
+[2|84|]Subject search and browse:
+[2|13|click,select]{value="grp_physics"}Physics | Subject search and browse: | Search in
+[2|116|click]Search
+[2|117|click]Form Interface
+[2|118|click]Catchup
+[1|120|]Physics
+[2|123|click]Astrophysics
+[2|471|](
+[2|124|]astro-ph
+[2|125|click]new
+[2|475|],
+[2|126|click]recent
+[2|477|],
+[2|127|click]search
+[2|479|])
+[2|128|click]Astrophysics of Galaxies
+[2|481|];
+[2|129|click]Cosmology and Nongalactic Astrophysics
+[2|483|];
+[2|130|click]Earth and Planetary Astrophysics
+[2|485|];
+[2|131|click]High Energy Astrophysical Phenomena
+[2|487|];
+[2|132|click]Instrumentation and Methods for Astrophysics
+[2|489|];
+[2|133|click]Solar and Stellar Astrophysics
+[2|135|click]Condensed Matter
+[2|493|](
+[2|136|]cond-mat
+[2|137|click]new
+[2|497|],
+[2|138|click]recent
+[2|499|],
+[2|139|click]search
+[2|501|])
+[2|140|click]Disordered Systems and Neural Networks
+[2|503|];
+[2|141|click]Materials Science
+[2|505|];
+[2|142|click]Mesoscale and Nanoscale Physics
+[2|507|];
+[2|143|click]Other Condensed Matter
+[2|509|];
+[2|144|click]Quantum Gases
+[2|511|];
+[2|145|click]Soft Condensed Matter
+[2|513|];
+[2|146|click]Statistical Mechanics
+[2|515|];
+[2|147|click]Strongly Correlated Electrons
+[2|517|];
+[2|148|click]Superconductivity
+[2|150|click]General Relativity and Quantum Cosmology
+[2|521|](
+[2|151|]gr-qc
+[2|152|click]new
+[2|525|],
+[2|153|click]recent
+[2|527|],
+[2|154|click]search
+[2|529|])
+[2|156|click]High Energy Physics - Experiment
+[2|532|](
+[2|157|]hep-ex
+[2|158|click]new
+[2|536|],
+[2|159|click]recent
+[2|538|],
+[2|160|click]search
+[2|540|])
+[2|162|click]High Energy Physics - Lattice
+[2|543|](
+[2|163|]hep-lat
+[2|164|click]new
+[2|547|],
+[2|10|click]recent
+[2|549|],
+[2|165|click]search
+[2|551|])
+[2|167|click]High Energy Physics - Phenomenology
+[2|554|](
+[2|168|]hep-ph
+[2|169|click]new
+[2|558|],
+[2|170|click]recent
+[2|560|],
+[2|171|click]search
+[2|562|])
+[2|173|click]High Energy Physics - Theory
+[2|565|](
+[2|174|]hep-th
+[2|175|click]new
+[2|569|],
+[2|176|click]recent
+[2|571|],
+[2|177|click]search
+[2|573|])
+[2|179|click]Mathematical Physics
+[2|576|](
+[2|180|]math-ph
+[2|181|click]new
+[2|580|],
+[2|182|click]recent
+[2|582|],
+[2|183|click]search
+[2|584|])
+[2|185|click]Nonlinear Sciences
+[2|587|](
+[2|186|]nlin
+[2|187|click]new
+[2|591|],
+[2|188|click]recent
+[2|593|],
+[2|189|click]search
+[2|595|])
+[2|596|]includes:
+[2|191|click]Adaptation and Self-Organizing Systems
+[2|598|];
+[2|192|click]Cellular Automata and Lattice Gases
+[2|600|];
+[2|193|click]Chaotic Dynamics
+[2|602|];
+[2|194|click]Exactly Solvable and Integrable Systems
+[2|604|];
+[2|195|click]Pattern Formation and Solitons
+[2|197|click]Nuclear Experiment
+[2|608|](
+[2|198|]nucl-ex
+[2|199|click]new
+[2|612|],
+[2|200|click]recent
+[2|614|],
+[2|201|click]search
+[2|616|])
+[2|203|click]Nuclear Theory
+[2|619|](
+[2|204|]nucl-th
+[2|205|click]new
+[2|623|],
+[2|206|click]recent
+[2|625|],
+[2|207|click]search
+[2|627|])
+[2|209|click]Physics
+[2|630|](
+[2|210|]physics
+[2|211|click]new
+[2|634|],
+[2|212|click]recent
+[2|636|],
+[2|213|click]search
+[2|638|])
+[2|639|]includes:
+[2|215|click]Accelerator Physics
+[2|641|];
+[2|216|click]Applied Physics
+[2|643|];
+[2|217|click]Atmospheric and Oceanic Physics
+[2|645|];
+[2|218|click]Atomic and Molecular Clusters
+[2|647|];
+[2|219|click]Atomic Physics
+[2|649|];
+[2|220|click]Biological Physics
+[2|651|];
+[2|221|click]Chemical Physics
+[2|653|];
+[2|222|click]Classical Physics
+[2|655|];
+[2|223|click]Computational Physics
+[2|657|];
+[2|224|click]Data Analysis, Statistics and Probability
+[2|659|];
+[2|225|click]Fluid Dynamics
+[2|661|];
+[2|226|click]General Physics
+[2|663|];
+[2|227|click]Geophysics
+[2|665|];
+[2|228|click]History and Philosophy of Physics
+[2|667|];
+[2|229|click]Instrumentation and Detectors
+[2|669|];
+[2|230|click]Medical Physics
+[2|671|];
+[2|231|click]Optics
+[2|673|];
+[2|232|click]Physics and Society
+[2|675|];
+[2|233|click]Physics Education
+[2|677|];
+[2|234|click]Plasma Physics
+[2|679|];
+[2|235|click]Popular Physics
+[2|681|];
+[2|236|click]Space Physics
+[2|238|click]Quantum Physics
+[2|685|](
+[2|239|]quant-ph
+[2|240|click]new
+[2|689|],
+[2|241|click]recent
+[2|691|],
+[2|242|click]search
+[2|693|])
+[1|243|]Mathematics
+[2|246|click]Mathematics
+[2|697|](
+[2|247|]math
+[2|248|click]new
+[2|701|],
+[2|249|click]recent
+[2|703|],
+[2|250|click]search
+[2|705|])
+[2|706|]includes: (see
+[2|252|click]detailed description
+[2|708|]):
+[2|253|click]Algebraic Geometry
+[2|710|];
+[2|254|click]Algebraic Topology
+[2|712|];
+[2|255|click]Analysis of PDEs
+[2|714|];
+[2|256|click]Category Theory
+[2|716|];
+[2|257|click]Classical Analysis and ODEs
+[2|718|];
+[2|258|click]Combinatorics
+[2|720|];
+[2|259|click]Commutative Algebra
+[2|722|];
+[2|260|click]Complex Variables
+[2|724|];
+[2|261|click]Differential Geometry
+[2|726|];
+[2|262|click]Dynamical Systems
+[2|728|];
+[2|263|click]Functional Analysis
+[2|730|];
+[2|264|click]General Mathematics
+[2|732|];
+[2|265|click]General Topology
+[2|734|];
+[2|266|click]Geometric Topology
+[2|736|];
+[2|267|click]Group Theory
+[2|738|];
+[2|268|click]History and Overview
+[2|740|];
+[2|269|click]Information Theory
+[2|742|];
+[2|270|click]K-Theory and Homology
+[2|744|];
+[2|271|click]Logic
+[2|746|];
+[2|272|click]Mathematical Physics
+[2|748|];
+[2|273|click]Metric Geometry
+[2|750|];
+[2|274|click]Number Theory
+[2|752|];
+[2|275|click]Numerical Analysis
+[2|754|];
+[2|276|click]Operator Algebras
+[2|756|];
+[2|277|click]Optimization and Control
+[2|758|];
+[2|278|click]Probability
+[2|760|];
+[2|279|click]Quantum Algebra
+[2|762|];
+[2|280|click]Representation Theory
+[2|764|];
+[2|281|click]Rings and Algebras
+[2|766|];
+[2|282|click]Spectral Theory
+[2|768|];
+[2|283|click]Statistics Theory
+[2|770|];
+[2|284|click]Symplectic Geometry
+[1|285|]Computer Science
+[2|288|click]Computing Research Repository
+[2|775|](
+[2|289|]CoRR
+[2|290|click]new
+[2|779|],
+[2|291|click]recent
+[2|781|],
+[2|292|click]search
+[2|783|])
+[2|784|]includes: (see
+[2|294|click]detailed description
+[2|786|]):
+[2|295|click]Artificial Intelligence
+[2|788|];
+[2|296|click]Computation and Language
+[2|790|];
+[2|8|click]Computational Complexity
+[2|792|];
+[2|297|click]Computational Engineering, Finance, and Science
+[2|794|];
+[2|298|click]Computational Geometry
+[2|796|];
+[2|299|click]Computer Science and Game Theory
+[2|798|];
+[2|300|click]Computer Vision and Pattern Recognition
+[2|800|];
+[2|301|click]Computers and Society
+[2|802|];
+[2|302|click]Cryptography and Security
+[2|804|];
+[2|303|click]Data Structures and Algorithms
+[2|806|];
+[2|304|click]Databases
+[2|808|];
+[2|305|click]Digital Libraries
+[2|810|];
+[2|306|click]Discrete Mathematics
+[2|812|];
+[2|307|click]Distributed, Parallel, and Cluster Computing
+[2|814|];
+[2|308|click]Emerging Technologies
+[2|816|];
+[2|309|click]Formal Languages and Automata Theory
+[2|818|];
+[2|310|click]General Literature
+[2|820|];
+[2|311|click]Graphics
+[2|822|];
+[2|312|click]Hardware Architecture
+[2|824|];
+[2|313|click]Human-Computer Interaction
+[2|826|];
+[2|314|click]Information Retrieval
+[2|828|];
+[2|315|click]Information Theory
+[2|830|];
+[2|316|click]Logic in Computer Science
+[2|832|];
+[2|317|click]Machine Learning
+[2|834|];
+[2|318|click]Mathematical Software
+[2|836|];
+[2|319|click]Multiagent Systems
+[2|838|];
+[2|320|click]Multimedia
+[2|840|];
+[2|321|click]Networking and Internet Architecture
+[2|842|];
+[2|322|click]Neural and Evolutionary Computing
+[2|844|];
+[2|323|click]Numerical Analysis
+[2|846|];
+[2|324|click]Operating Systems
+[2|848|];
+[2|325|click]Other Computer Science
+[2|850|];
+[2|326|click]Performance
+[2|852|];
+[2|327|click]Programming Languages
+[2|854|];
+[2|328|click]Robotics
+[2|856|];
+[2|329|click]Social and Information Networks
+[2|858|];
+[2|330|click]Software Engineering
+[2|860|];
+[2|331|click]Sound
+[2|862|];
+[2|332|click]Symbolic Computation
+[2|864|];
+[2|333|click]Systems and Control
+[1|334|]Quantitative Biology
+[2|337|click]Quantitative Biology
+[2|869|](
+[2|338|]q-bio
+[2|339|click]new
+[2|873|],
+[2|340|click]recent
+[2|875|],
+[2|341|click]search
+[2|877|])
+[2|878|]includes: (see
+[2|343|click]detailed description
+[2|880|]):
+[2|344|click]Biomolecules
+[2|882|];
+[2|345|click]Cell Behavior
+[2|884|];
+[2|346|click]Genomics
+[2|886|];
+[2|347|click]Molecular Networks
+[2|888|];
+[2|348|click]Neurons and Cognition
+[2|890|];
+[2|349|click]Other Quantitative Biology
+[2|892|];
+[2|350|click]Populations and Evolution
+[2|894|];
+[2|351|click]Quantitative Methods
+[2|896|];
+[2|352|click]Subcellular Processes
+[2|898|];
+[2|353|click]Tissues and Organs
+[1|354|]Quantitative Finance
+[2|357|click]Quantitative Finance
+[2|903|](
+[2|358|]q-fin
+[2|359|click]new
+[2|907|],
+[2|360|click]recent
+[2|909|],
+[2|361|click]search
+[2|911|])
+[2|912|]includes: (see
+[2|363|click]detailed description
+[2|914|]):
+[2|364|click]Computational Finance
+[2|916|];
+[2|365|click]Economics
+[2|918|];
+[2|366|click]General Finance
+[2|920|];
+[2|367|click]Mathematical Finance
+[2|922|];
+[2|368|click]Portfolio Management
+[2|924|];
+[2|16|click]Pricing of Securities
+[2|926|];
+[2|369|click]Risk Management
+[2|928|];
+[2|370|click]Statistical Finance
+[2|930|];
+[2|371|click]Trading and Market Microstructure
+[1|372|]Statistics
+[2|375|click]Statistics
+[2|935|](
+[2|376|]stat
+[2|377|click]new
+[2|939|],
+[2|378|click]recent
+[2|941|],
+[2|379|click]search
+[2|943|])
+[2|944|]includes: (see
+[2|381|click]detailed description
+[2|946|]):
+[2|382|click]Applications
+[2|948|];
+[2|383|click]Computation
+[2|950|];
+[2|384|click]Machine Learning
+[2|952|];
+[2|385|click]Methodology
+[2|954|];
+[2|386|click]Other Statistics
+[2|956|];
+[2|387|click]Statistics Theory
+[1|388|]Electrical Engineering and Systems Science
+[2|391|click]Electrical Engineering and Systems Science
+[2|961|](
+[2|392|]eess
+[2|393|click]new
+[2|965|],
+[2|394|click]recent
+[2|967|],
+[2|395|click]search
+[2|969|])
+[2|970|]includes: (see
+[2|397|click]detailed description
+[2|972|]):
+[2|398|click]Audio and Speech Processing
+[2|974|];
+[2|399|click]Image and Video Processing
+[2|976|];
+[2|400|click]Signal Processing
+[2|978|];
+[2|401|click]Systems and Control
+[1|402|]Economics
+[2|405|click]Economics
+[2|983|](
+[2|406|]econ
+[2|407|click]new
+[2|987|],
+[2|408|click]recent
+[2|989|],
+[2|409|click]search
+[2|991|])
+[2|992|]includes: (see
+[2|411|click]detailed description
+[2|994|]):
+[2|412|click]Econometrics
+[2|996|];
+[2|9|click]General Economics
+[2|998|];
+[2|413|click]Theoretical Economics
+[1|415|]About arXiv
+[2|418|click]General information
+[2|420|click]How to Submit to arXiv
+[2|422|click]Membership & Giving
+[2|424|click]Who We Are
+[1|1009|]We gratefully acknowledge support from our
+[1|429|click]major funders
+[1|1011|],
+[1|431|click]member institutions
+[1|1014|],\n        and all contributors.
+[1|435|]Site navigation
+[2|436|click]About
+[2|438|click]Help
+[2|440|click]Contact
+[2|442|click]Subscribe
+[2|444|click]Copyright
+[2|446|click]Privacy
+[2|448|click]Accessibility
+[2|450|click]Operational Status

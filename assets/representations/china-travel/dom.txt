@@ -1,0 +1,392 @@
+[194]<a />
+	[7]<img alt=tct-logo />
+[202]<div />
+	[204]<div />
+		English
+	[61]<div />
+		|SHADOW(open)|[60]<input type=text name=q id=autocomplete placeholder=Site Search />
+		[223]<button aria-label=search type=submit />
+[226]<a />
+	Reviews
+[229]<a />
+	About us
+[232]<a />
+	Contact us
+[259]<a />
+	Home
+[262]<a />
+	China Tours
+[265]<a />
+	Classic China Tours
+[267]<a />
+	Scenic China Tours
+[269]<a />
+	China Cultural Tours
+[271]<a />
+	Yangtze River Cruises
+[273]<a />
+	Silk Road Adventure
+[275]<a />
+	Tibet Tours
+[277]<a />
+	Yunnan Tours
+[279]<a />
+	Beijing Tours
+[281]<a />
+	Shanghai Tours
+[283]<a />
+	Guilin Tours
+[285]<a />
+	Chengdu Tours
+[287]<a />
+	Zhangjiajie Tours
+[288]<span />
+[290]<a />
+	Top 10 Tours
+[292]<a />
+	Group Tours
+[294]<a />
+	Tailor-made
+[296]<a />
+	Asia Tours
+[299]<a />
+	Multi-country Asia Tours
+[301]<a />
+	Thailand Tours
+[303]<a />
+	Vietnam Tours
+[305]<a />
+	Cambodia Tours
+[307]<a />
+	Myanmar Tours
+[309]<a />
+	Indonesia Tours
+[311]<a />
+	Singapore Tours
+[313]<a />
+	Nepal Tours
+[315]<a />
+	India Tours
+[317]<a />
+	Japan Tours
+[319]<a />
+	South Korea Tours
+[320]<span />
+[321]<span />
+[323]<a />
+	Destinations
+[326]<a />
+	Beijing
+[328]<a />
+	Shanghai
+[330]<a />
+	Xi'an
+[332]<a />
+	Guilin
+[334]<a />
+	Zhangjiajie
+[336]<a />
+	Chengdu
+[338]<a />
+	Chongqing
+[340]<a />
+	Hangzhou
+[342]<a />
+	Huangshan
+[344]<a />
+	Tibet
+[346]<a />
+	Yunnan
+[348]<a />
+	Yangtze River
+[349]<span />
+[350]<span />
+[352]<a />
+	China Guide
+[355]<a />
+	China Travel Tips
+[357]<a />
+	Best Places in China
+[359]<a />
+	Chinese Culture
+[361]<a />
+	China Attractions
+[363]<a />
+	The Great Wall
+[365]<a />
+	China Panda
+[367]<a />
+	High-speed Train
+[369]<a />
+	The Silk Road
+[371]<a />
+	China Maps
+[372]<span />
+[373]<span />
+[387]<div />
+	Time to explore real China!
+	We can customize your dream China trip by your interests & requests!
+	[31]<div />
+		[396]<div id=search-b />
+			|SHADOW(open)|[32]<input name=city id=city placeholder=Where to go? title=please select the above destinations that you want to go />
+			[47]<input type=checkbox value=Beijing name=sc[] id=bj checked=false />
+			Beijing
+			[48]<input type=checkbox name=sc[] value=Shanghai id=sh checked=false />
+			Shanghai
+			[49]<input type=checkbox name=sc[] value=Xian id=xa checked=false />
+			Xi'an
+			[50]<input type=checkbox name=sc[] value=Guilin id=gl checked=false />
+			Guilin
+			[51]<input type=checkbox name=sc[] value=Chengdu id=cd checked=false />
+			Chengdu
+			[52]<input type=checkbox name=sc[] value=Yangtze id=yr checked=false />
+			Yangtze River
+			[53]<input type=checkbox name=sc[] value=Hong-Kong id=hk checked=false />
+			Hong Kong
+			[54]<input type=checkbox name=sc[] value=Lhasa id=ls checked=false />
+			Tibet
+			[55]<input type=checkbox name=sc[] value=Kunming id=km checked=false />
+			Yunnan
+			[56]<input type=checkbox name=sc[] value=Hangzhou id=hz checked=false />
+			Hangzhou
+			[57]<input type=checkbox name=sc[] value=Huangshan id=hs checked=false />
+			Huangshan
+			[58]<input type=checkbox name=sc[] value=Zhangjiajie id=zjj checked=false />
+			Zhangjiajie
+		|SHADOW(open)|*[33]<select name=Tour_Length expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=8,options=Duration|All|1 day|2-5 days) />
+		|SHADOW(open)|[459]<input type=submit value=Search />
+Top China Travel, Top Travel Agency in China!
+The choice is easy. Top China Travel is the foremost online China tour operator, offering high-quality
+                China in-bound tour services to the tourists worldwide. We offer an extensive range of services
+                including organized and independent tours of China, special interest and incentive trips, as well as
+                booking services for accommodation and transportation...to help you with an enjoyable China holiday.
+[467]<a />
+	Top China Tours
+[471]<a />
+	11 Days China Wonders Experience Tour
+Beijing, Xi'an, Guilin, Shanghai
+[475]<a />
+	View Details
+[478]<a />
+	8 Days Classic China Tour
+Beijing, Xi'an, Shanghai
+[482]<a />
+	View Details
+[485]<a />
+	12 Days China Panda Tour
+Beijing, Xi'an, Chengdu, Guilin, Shanghai
+[489]<a />
+	View Details
+[8]<a />
+	14 Days Enjoy Natural Wonders of Zhangjiajie & Guilin
+Beijing, Xi'an, Guilin, Zhangjiajie,  Shanghai
+[497]<a />
+	View Details
+[500]<a />
+	14 Days China's Platinum Triangle: Imperial Capitals & Avatar Peaks Adventure
+Beijing, Xi'an, Chengdu, Chongqing, Zhangjiajie, Shanghai
+[506]<a />
+	View Details
+[509]<a />
+	16 Days China Highlight Tour
+Beijing, Xi'an, Chengdu, Guilin, Hangzhou, Suzhou, Shanghai
+[515]<a />
+	View Details
+[517]<a />
+	[518]<span />
+		More Tours
+[522]<a />
+	Top Asia Tours including China
+[526]<a />
+	14 Days Highlights of Japan, South Korea and China Group Tour
+Tokyo, Mt. Fuji, Seoul, Beijing, Xi'an, Shanghai
+[532]<a />
+	View Details
+[535]<a />
+	17 Days Japan & China Group Tour
+Tokyo, Hakone, Kyoto, Nara, Osaka, Beijing, Xi'an, Guilin, Shanghai
+[541]<a />
+	View Details
+[544]<a />
+	15 Days Best of China and Vietnam Group Tour
+Beijing, Xi'an, Shanghai, Hanoi, Halong Bay, Ho Chi Minh
+[550]<a />
+	View Details
+[553]<a />
+	16 Days Best of China and Thailand Group Tour
+Beijing, Xi'an, Shanghai, Bangkok, Chiang Mai, Chiang Rai, Phuket
+[559]<a />
+	View Details
+[562]<a />
+	15 Days China, Cambodia & Thailand
+Beijing, Xi'an, Shanghai,Phnom Penh, Siem Reap, Bangkok
+[568]<a />
+	View Details
+[571]<a />
+	19 Days China, Nepal & India Explorer
+Beijing, Xi'an, Lhasa, Chengdu, Kathmandu, Nagarkot, Delhi, Jaipur, Agra, Delhi
+[577]<a />
+	View Details
+[579]<a />
+	[580]<span />
+		More Tours
+Tailor-made Your Trip
+Free Design Itinerary and Quote for You !
+[589]<a />
+	Create My Trip
+[593]<a />
+	Top China Destinations
+[596]<a />
+	Beijing
+[601]<a />
+	Xi'an
+[606]<a />
+	Shanghai
+[611]<a />
+	Guilin
+[616]<a />
+	Chengdu
+[621]<a />
+	Zhangjiajie
+[626]<a />
+	Tibet
+[631]<a />
+	Yangtze River
+[636]<a />
+	[637]<span />
+		More Destinations
+[641]<a />
+	Useful Travel Articles
+[645]<a />
+	2026 China Travel Restrictions & Policy ( Latest updates )
+[650]<a />
+	Most Beautiful Places in China
+[655]<a />
+	Best Time to Visit China
+[660]<a />
+	Top 10 Attractions in China
+[665]<a />
+	How to plan a trip to Tibet?
+[670]<a />
+	How to Plan a Silk Road Tour?
+[674]<a />
+	[675]<span />
+		Get More Travel Guide & Tips
+Why Choose Top China Travel
+[685]<a />
+	Well-known Tour Brand
+CITS 60-year history
+[692]<a />
+	Commended by TripAdvisor
+Excellence award winner
+[699]<a />
+	10000+ Client's Feedback
+Our real happiness
+[706]<a />
+	Assist government reception
+World celebrities with us
+[713]<a />
+	Professional Sales Team
+All tour experts
+[720]<a />
+	Our Memberships
+In major travel associations
+Congratulations!
+We are recommended by Tripadvisor seven years in a row
+[730]<a />
+[735]<a />
+	[736]<img alt=TripAdvisor />
+[740]<a />
+	Top China Travel
+Recent Traveler Reviews
+“Hassle free experience. We recommend it.”
+“An unforgettable 17-day China trip with TCT!”
+“Luke and TCT -a five star experience”
+“Enjoyable trip to Chongqing with family with...”
+[758]<a id=allreviews />
+	Read reviews
+[761]<a id=writereview />
+	Write a review
+Lea S
+Vancouver Island, Canada
+“16 days in China and Cambodia”
+Just got back from an amazing 16 days in China and Cambodia. Rebecca set up the perfect
+                        itinerary for me and my daughters. The guides were all amazing - especially Joanne in Guilin and
+                        Chet in Seim Reap. All of the hotels were great and very well situated.
+I would recommend TCT to everyone who is planning a trip to China ( and they shuld NOT miss
+                        Guilin)
+[782]<a />
+	TCT Client's Feedbacks
+[786]<a />
+	16 Days Beijing-Xi'an-Guilin-Zhangjiajie-Shanghai Trip with Family
+Client:
+DIMATTEO ROCCO
+Nationality:
+ITALY
+Pax:
+Itinerary:
+[798]<a />
+	Beijing-Xi'an-Guilin-Zhangjiajie-Shanghai
+[801]<a />
+	8 Days Beijing-Xi'an-Shanghai Small Group Tour
+Client:
+FROILAN CLACER
+Nationality:
+CANADA
+Pax:
+Itinerary:
+[813]<a />
+	Beijing-Xi'an-Shanghai
+[816]<a />
+	14 Days Explore Liziba & Giant Pandas Adventure
+Client:
+SURENDRA
+Nationality:
+INDIA
+Pax:
+Itinerary:
+[828]<a />
+	Beijing-Xi'an-Chengdu-Chongqing-Zhangjiajie-Shanghai
+[830]<a />
+	[831]<span />
+		More Feedbacks
+We are member of
+[840]<a />
+	[841]<img />
+Follow us on
+[846]<a />
+	[847]<img />
+[848]<a />
+	[849]<img />
+[850]<a />
+	[851]<img />
+[852]<a />
+	[853]<img />
+Pay By
+[858]<a />
+	[859]<img />
+[860]<a />
+	[861]<img />
+[862]<a />
+	[863]<img />
+[864]<a />
+	[865]<img />
+[866]<a />
+	[867]<img />
+[872]<a />
+	About us
+[874]<a />
+	Contact us
+[876]<a />
+	How to Book
+[878]<a />
+	How to Pay
+[880]<a />
+	Terms & Conditions
+[882]<a />
+	Cancellation and Refund
+[884]<a />
+	Privacy Statement
+Our license Number: L-GX-CJ00001
+Copyright 2004 All Rights Reserved
+Top China Travel

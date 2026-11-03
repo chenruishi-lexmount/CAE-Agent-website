@@ -1,0 +1,155 @@
+[0|112|click]The LLVM Project Blog
+[0|114|click]Facebook
+[0|115|click]GitHub
+[0|116|click]Twitter
+[0|117|click]Youtube
+[0|118|]LLVM Project News and Details from the Trenches
+[0|123|click]About
+[0|127|click]Posts
+[0|131|click]Tags
+[0|134|click]llvm.org
+[0|140|click]Static Memory Planner for MLIR: A GSoC 2026 Journey
+[0|143|]By Krish Gupta
+[0|144|]Oct 19, 2026
+[1|148|click]#gsoc
+[1|352|],
+[1|149|click]#mlir
+[1|354|],
+[1|150|click]#bufferization
+[1|356|],
+[1|151|click]#memory-planning
+[0|152|]10 minute read
+[0|153|]Hi, I am Krish Gupta. Over the summer I worked with the LLVM Foundation as part of Google Summer of Code 2026 on building a static memory planner for MLIR, mentored by Matthias Springer and Javed Absar.
+[0|154|click]Read more…
+[0|157|click]GSoC 2026: Improving lit
+[0|160|]By Prasoon Kumar (prasoon054)
+[0|161|]Oct 12, 2026
+[1|165|click]#GSoC
+[1|365|],
+[1|166|click]#lit
+[1|367|],
+[1|167|click]#testing
+[1|369|],
+[1|168|click]#performance
+[1|371|],
+[1|169|click]#python
+[0|170|]19 minute read
+[0|171|]This summer I worked on improving lit, the LLVM Integrated Tester, as part of Google Summer of Code 2026.\nI got interested in compilers after seeing how much heavy lifting happens underneath a single line of code, especially on parallel accelerators like GPUs.
+[0|172|click]Read more…
+[0|174|click]GSOC26: Sharing LLVM-libc's floating-point routines with compiler-rt
+[0|177|]By Mohamed Emad
+[0|178|]Oct 5, 2026
+[1|182|click]#gsoc
+[1|380|],
+[1|183|click]#libc
+[1|382|],
+[1|184|click]#compiler-rt
+[1|384|],
+[1|185|click]#builtins
+[1|386|],
+[1|186|click]#floating-point
+[1|388|],
+[1|187|click]#math
+[0|188|]7 minute read
+[0|189|]Introduction Hello LLVM community! I am Mohamed Emad, CSE student at Zagazig University, Egypt. This summer I worked on the next step of the Hand-in-Hand project, an effort that began in 2024 with #91651 to make LLVM-libc a shared foundation that the rest of LLVM can build on.
+[0|190|click]Read more…
+[0|193|click]Remembering Johannes Doerfert
+[0|196|]By Tanya Lattner
+[0|197|]Sep 24, 2026
+[1|201|click]#community
+[1|397|],
+[1|202|click]#in-memoriam
+[0|203|]7 minute read
+[0|204|]It is with great sadness that we share the news of the passing of Johannes Doerfert, on September 17, 2026, at the age of 36, after a battle with cancer.
+[0|205|click]Read more…
+[0|208|click]GSoC 2026: Improving HLSL Support in clangd
+[0|211|]By Maria Fernanda Guimarães
+[0|212|]Sep 21, 2026
+[1|216|click]#GSoC
+[1|406|],
+[1|217|click]#clangd
+[1|408|],
+[1|218|click]#HLSL
+[1|410|],
+[1|219|click]#Clang
+[0|220|]9 minute read
+[0|221|]GSoC 2026: Improving HLSL Support in clangd HLSL (High-Level Shading Language) is a C++-like language used for GPU shader programming. Clang already parses HLSL and represents many of its constructs in the AST.
+[0|222|click]Read more…
+[0|225|click]GSoC 2026: Extending Clang API Notes for C++: Overload-Specific Annotations for Functions and Methods
+[0|228|]By Dominic Stöcker
+[0|229|]Sep 14, 2026
+[1|233|click]#GSoC
+[1|419|],
+[1|234|click]#Clang
+[1|421|],
+[1|235|click]#API Notes
+[1|423|],
+[1|236|click]#Swift
+[1|425|],
+[1|237|click]#C++
+[0|238|]9 minute read
+[0|239|]Hi! I’m Dominic Stöcker, and during Google Summer of Code 2026 I worked on extending Clang API Notes for C++ with overload-specific annotations for functions and methods.\nMy mentors were Gábor Horváth, John Hui, and Egor Zhdan.
+[0|240|click]Read more…
+[0|243|click]GSoC 2025: Advanced symbol resolution for Clang-Repl
+[0|246|]By Sahil Patidar
+[0|247|]Jan 19, 2026
+[1|251|click]#GSoC
+[1|434|],
+[1|252|click]#clang-repl
+[1|436|],
+[1|253|click]#orc-jit
+[0|254|]9 minute read
+[0|255|]Introduction Hello! I’m Sahil Patidar, and this summer I had the opportunity to participate in Google Summer of Code (GSoC) 2025 with the LLVM Organization. My project focused on enhancing ORC-JIT and Clang-Repl by introducing a new feature for advanced symbol resolution, aimed at improving runtime symbol handling and flexibility.
+[0|256|click]Read more…
+[0|259|click]Making LLVM Compilation Data Accessible: A Unified Visualization Tool for Compiler Artifacts
+[0|262|]By Miguel Cárdenas
+[0|263|]Dec 8, 2025
+[1|267|click]#GSoC
+[1|445|],
+[1|268|click]#optimization
+[1|447|],
+[1|269|click]#visualization
+[1|449|],
+[1|270|click]#tooling
+[1|451|],
+[1|271|click]#offloading
+[0|272|]5 minute read
+[0|273|]This summer, I had the incredible opportunity to work on an LLVM project through Google Summer of Code 2025. As an undergraduate student passionate about compilers, I set out to tackle a problem that many LLVM developers face daily: the overwhelming nature of compilation data scattered across different flags, output formats, and locations.
+[0|274|click]Read more…
+[0|277|click]GSoC 2025: ClangIR upstreaming
+[0|280|]By Amr Hesham (amrdeveloper)
+[0|281|]Dec 1, 2025
+[1|285|click]#GSoC
+[1|460|],
+[1|286|click]#LLVM
+[1|462|],
+[1|287|click]#MLIR
+[1|464|],
+[1|288|click]#ClangIR
+[1|466|],
+[1|289|click]#C++
+[0|290|]6 minute read
+[0|291|]Hello everyone 👋! My name is Amr Hesham, and for Google Summer of Code 2025, I’ve been working on the ClangIR Upstreaming project.\nMy mentors were Bruno Cardoso Lopes, Andy Kaylor and Erich Keane.
+[0|292|click]Read more…
+[0|295|click]GSoC 2025: Rich Disassembler for LLDB
+[0|298|]By Abdullah Amin
+[0|299|]Nov 10, 2025
+[1|303|click]#GSoC
+[1|475|],
+[1|304|click]#LLDB
+[0|305|]6 minute read
+[0|306|]Hello! I’m Abdullah Amin, and this summer I had the exciting opportunity to participate in Google Summer of Code (GSoC) 2025 with the LLVM Compiler Infrastructure project. My project focused on extending LLDB with a Rich Disassembler that annotates machine instructions with source-level variable information.
+[0|307|click]Read more…
+[0|310|click]«« | First
+[0|313|click]« | Previous
+[0|316|click]1 | Page 1
+[0|318|click]2 | Page 2
+[0|320|click]3 | Page 3
+[0|322|click]4 | Page 4
+[0|324|click]5 | Page 5
+[0|326|click]» | Next
+[0|329|click]»» | Last
+[0|489|]llvm.org |\nRendered by
+[0|335|click]Hugo
+[0|491|]|
+[0|336|click]Subscribe

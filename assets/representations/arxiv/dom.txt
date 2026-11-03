@@ -1,0 +1,571 @@
+[49]<a />
+	Skip to main content
+[26]<img />
+Scheduled maintenance: Wednesday, October 28, 7:00 to 12:00 EDT (11:00 to 16:00 UTC).
+[53]<a />
+	Read more on our blog
+[54]<button />
+	Dismiss announcement
+[61]<a />
+[62]<a aria-label=archive home />
+[19]<a id=ds-search-toggle expanded=false />
+	Search
+[71]<a />
+	Submit
+[22]<a />
+	Donate
+[24]<a />
+	Log in
+arXiv is a free distribution service and an open-access archive for more than 3.2 million
+      scholarly articles in the fields of physics, mathematics, computer science, quantitative biology, quantitative finance, statistics, electrical engineering and systems science, and economics.
+      Materials on this site are not peer-reviewed by arXiv.
+[14]<form name=home-adv-search role=search />
+	Subject search and browse:
+	|SHADOW(open)|*[13]<select name=group title=Search in id=search-category expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=8,options=Physics|Mathematics|Quantitative Biology|Computer Science) />
+	|SHADOW(open)|[116]<input id=adv-search-btn type=button value=Search />
+	|SHADOW(open)|[117]<input type=submit name=/form value=Form Interface />
+	|SHADOW(open)|[118]<input id=catchup-btn type=submit name=/catchup value=Catchup />
+Physics
+[123]<a id=main-astro-ph />
+	Astrophysics
+astro-ph
+[125]<a id=new-astro-ph />
+	new
+[126]<a id=recent-astro-ph />
+	recent
+[127]<a id=search-astro-ph />
+	search
+[128]<a id=astro-ph.GA />
+	Astrophysics of Galaxies
+[129]<a id=astro-ph.CO />
+	Cosmology and Nongalactic Astrophysics
+[130]<a id=astro-ph.EP />
+	Earth and Planetary Astrophysics
+[131]<a id=astro-ph.HE />
+	High Energy Astrophysical Phenomena
+[132]<a id=astro-ph.IM />
+	Instrumentation and Methods for Astrophysics
+[133]<a id=astro-ph.SR />
+	Solar and Stellar Astrophysics
+[135]<a id=main-cond-mat />
+	Condensed Matter
+cond-mat
+[137]<a id=new-cond-mat />
+	new
+[138]<a id=recent-cond-mat />
+	recent
+[139]<a id=search-cond-mat />
+	search
+[140]<a id=cond-mat.dis-nn />
+	Disordered Systems and Neural Networks
+[141]<a id=cond-mat.mtrl-sci />
+	Materials Science
+[142]<a id=cond-mat.mes-hall />
+	Mesoscale and Nanoscale Physics
+[143]<a id=cond-mat.other />
+	Other Condensed Matter
+[144]<a id=cond-mat.quant-gas />
+	Quantum Gases
+[145]<a id=cond-mat.soft />
+	Soft Condensed Matter
+[146]<a id=cond-mat.stat-mech />
+	Statistical Mechanics
+[147]<a id=cond-mat.str-el />
+	Strongly Correlated Electrons
+[148]<a id=cond-mat.supr-con />
+	Superconductivity
+[150]<a id=main-gr-qc />
+	General Relativity and Quantum Cosmology
+gr-qc
+[152]<a id=new-gr-qc />
+	new
+[153]<a id=recent-gr-qc />
+	recent
+[154]<a id=search-gr-qc />
+	search
+[156]<a id=main-hep-ex />
+	High Energy Physics - Experiment
+hep-ex
+[158]<a id=new-hep-ex />
+	new
+[159]<a id=recent-hep-ex />
+	recent
+[160]<a id=search-hep-ex />
+	search
+[162]<a id=main-hep-lat />
+	High Energy Physics - Lattice
+hep-lat
+[164]<a id=new-hep-lat />
+	new
+[10]<a id=recent-hep-lat />
+	recent
+[165]<a id=search-hep-lat />
+	search
+[167]<a id=main-hep-ph />
+	High Energy Physics - Phenomenology
+hep-ph
+[169]<a id=new-hep-ph />
+	new
+[170]<a id=recent-hep-ph />
+	recent
+[171]<a id=search-hep-ph />
+	search
+[173]<a id=main-hep-th />
+	High Energy Physics - Theory
+hep-th
+[175]<a id=new-hep-th />
+	new
+[176]<a id=recent-hep-th />
+	recent
+[177]<a id=search-hep-th />
+	search
+[179]<a id=main-math-ph />
+	Mathematical Physics
+math-ph
+[181]<a id=new-math-ph />
+	new
+[182]<a id=recent-math-ph />
+	recent
+[183]<a id=search-math-ph />
+	search
+[185]<a id=main-nlin />
+	Nonlinear Sciences
+nlin
+[187]<a id=new-nlin />
+	new
+[188]<a id=recent-nlin />
+	recent
+[189]<a id=search-nlin />
+	search
+includes:
+[191]<a id=nlin.AO />
+	Adaptation and Self-Organizing Systems
+[192]<a id=nlin.CG />
+	Cellular Automata and Lattice Gases
+[193]<a id=nlin.CD />
+	Chaotic Dynamics
+[194]<a id=nlin.SI />
+	Exactly Solvable and Integrable Systems
+[195]<a id=nlin.PS />
+	Pattern Formation and Solitons
+[197]<a id=main-nucl-ex />
+	Nuclear Experiment
+nucl-ex
+[199]<a id=new-nucl-ex />
+	new
+[200]<a id=recent-nucl-ex />
+	recent
+[201]<a id=search-nucl-ex />
+	search
+[203]<a id=main-nucl-th />
+	Nuclear Theory
+nucl-th
+[205]<a id=new-nucl-th />
+	new
+[206]<a id=recent-nucl-th />
+	recent
+[207]<a id=search-nucl-th />
+	search
+[209]<a id=main-physics />
+	Physics
+physics
+[211]<a id=new-physics />
+	new
+[212]<a id=recent-physics />
+	recent
+[213]<a id=search-physics />
+	search
+includes:
+[215]<a id=physics.acc-ph />
+	Accelerator Physics
+[216]<a id=physics.app-ph />
+	Applied Physics
+[217]<a id=physics.ao-ph />
+	Atmospheric and Oceanic Physics
+[218]<a id=physics.atm-clus />
+	Atomic and Molecular Clusters
+[219]<a id=physics.atom-ph />
+	Atomic Physics
+[220]<a id=physics.bio-ph />
+	Biological Physics
+[221]<a id=physics.chem-ph />
+	Chemical Physics
+[222]<a id=physics.class-ph />
+	Classical Physics
+[223]<a id=physics.comp-ph />
+	Computational Physics
+[224]<a id=physics.data-an />
+	Data Analysis, Statistics and Probability
+[225]<a id=physics.flu-dyn />
+	Fluid Dynamics
+[226]<a id=physics.gen-ph />
+	General Physics
+[227]<a id=physics.geo-ph />
+	Geophysics
+[228]<a id=physics.hist-ph />
+	History and Philosophy of Physics
+[229]<a id=physics.ins-det />
+	Instrumentation and Detectors
+[230]<a id=physics.med-ph />
+	Medical Physics
+[231]<a id=physics.optics />
+	Optics
+[232]<a id=physics.soc-ph />
+	Physics and Society
+[233]<a id=physics.ed-ph />
+	Physics Education
+[234]<a id=physics.plasm-ph />
+	Plasma Physics
+[235]<a id=physics.pop-ph />
+	Popular Physics
+[236]<a id=physics.space-ph />
+	Space Physics
+[238]<a id=main-quant-ph />
+	Quantum Physics
+quant-ph
+[240]<a id=new-quant-ph />
+	new
+[241]<a id=recent-quant-ph />
+	recent
+[242]<a id=search-quant-ph />
+	search
+Mathematics
+[246]<a id=main-math />
+	Mathematics
+math
+[248]<a id=new-math />
+	new
+[249]<a id=recent-math />
+	recent
+[250]<a id=search-math />
+	search
+includes: (see
+[252]<a id=details-math />
+	detailed description
+):
+[253]<a id=math.AG />
+	Algebraic Geometry
+[254]<a id=math.AT />
+	Algebraic Topology
+[255]<a id=math.AP />
+	Analysis of PDEs
+[256]<a id=math.CT />
+	Category Theory
+[257]<a id=math.CA />
+	Classical Analysis and ODEs
+[258]<a id=math.CO />
+	Combinatorics
+[259]<a id=math.AC />
+	Commutative Algebra
+[260]<a id=math.CV />
+	Complex Variables
+[261]<a id=math.DG />
+	Differential Geometry
+[262]<a id=math.DS />
+	Dynamical Systems
+[263]<a id=math.FA />
+	Functional Analysis
+[264]<a id=math.GM />
+	General Mathematics
+[265]<a id=math.GN />
+	General Topology
+[266]<a id=math.GT />
+	Geometric Topology
+[267]<a id=math.GR />
+	Group Theory
+[268]<a id=math.HO />
+	History and Overview
+[269]<a id=math.IT />
+	Information Theory
+[270]<a id=math.KT />
+	K-Theory and Homology
+[271]<a id=math.LO />
+	Logic
+[272]<a id=math.MP />
+	Mathematical Physics
+[273]<a id=math.MG />
+	Metric Geometry
+[274]<a id=math.NT />
+	Number Theory
+[275]<a id=math.NA />
+	Numerical Analysis
+[276]<a id=math.OA />
+	Operator Algebras
+[277]<a id=math.OC />
+	Optimization and Control
+[278]<a id=math.PR />
+	Probability
+[279]<a id=math.QA />
+	Quantum Algebra
+[280]<a id=math.RT />
+	Representation Theory
+[281]<a id=math.RA />
+	Rings and Algebras
+[282]<a id=math.SP />
+	Spectral Theory
+[283]<a id=math.ST />
+	Statistics Theory
+[284]<a id=math.SG />
+	Symplectic Geometry
+Computer Science
+[288]<a id=main-cs />
+	Computing Research Repository
+CoRR
+[290]<a id=new-cs />
+	new
+[291]<a id=recent-cs />
+	recent
+[292]<a id=search-cs />
+	search
+includes: (see
+[294]<a id=details-cs />
+	detailed description
+):
+[295]<a id=cs.AI />
+	Artificial Intelligence
+[296]<a id=cs.CL />
+	Computation and Language
+[8]<a id=cs.CC />
+	Computational Complexity
+[297]<a id=cs.CE />
+	Computational Engineering, Finance, and Science
+[298]<a id=cs.CG />
+	Computational Geometry
+[299]<a id=cs.GT />
+	Computer Science and Game Theory
+[300]<a id=cs.CV />
+	Computer Vision and Pattern Recognition
+[301]<a id=cs.CY />
+	Computers and Society
+[302]<a id=cs.CR />
+	Cryptography and Security
+[303]<a id=cs.DS />
+	Data Structures and Algorithms
+[304]<a id=cs.DB />
+	Databases
+[305]<a id=cs.DL />
+	Digital Libraries
+[306]<a id=cs.DM />
+	Discrete Mathematics
+[307]<a id=cs.DC />
+	Distributed, Parallel, and Cluster Computing
+[308]<a id=cs.ET />
+	Emerging Technologies
+[309]<a id=cs.FL />
+	Formal Languages and Automata Theory
+[310]<a id=cs.GL />
+	General Literature
+[311]<a id=cs.GR />
+	Graphics
+[312]<a id=cs.AR />
+	Hardware Architecture
+[313]<a id=cs.HC />
+	Human-Computer Interaction
+[314]<a id=cs.IR />
+	Information Retrieval
+[315]<a id=cs.IT />
+	Information Theory
+[316]<a id=cs.LO />
+	Logic in Computer Science
+[317]<a id=cs.LG />
+	Machine Learning
+[318]<a id=cs.MS />
+	Mathematical Software
+[319]<a id=cs.MA />
+	Multiagent Systems
+[320]<a id=cs.MM />
+	Multimedia
+[321]<a id=cs.NI />
+	Networking and Internet Architecture
+[322]<a id=cs.NE />
+	Neural and Evolutionary Computing
+[323]<a id=cs.NA />
+	Numerical Analysis
+[324]<a id=cs.OS />
+	Operating Systems
+[325]<a id=cs.OH />
+	Other Computer Science
+[326]<a id=cs.PF />
+	Performance
+[327]<a id=cs.PL />
+	Programming Languages
+[328]<a id=cs.RO />
+	Robotics
+[329]<a id=cs.SI />
+	Social and Information Networks
+[330]<a id=cs.SE />
+	Software Engineering
+[331]<a id=cs.SD />
+	Sound
+[332]<a id=cs.SC />
+	Symbolic Computation
+[333]<a id=cs.SY />
+	Systems and Control
+Quantitative Biology
+[337]<a id=main-q-bio />
+	Quantitative Biology
+q-bio
+[339]<a id=new-q-bio />
+	new
+[340]<a id=recent-q-bio />
+	recent
+[341]<a id=search-q-bio />
+	search
+includes: (see
+[343]<a id=details-q-bio />
+	detailed description
+):
+[344]<a id=q-bio.BM />
+	Biomolecules
+[345]<a id=q-bio.CB />
+	Cell Behavior
+[346]<a id=q-bio.GN />
+	Genomics
+[347]<a id=q-bio.MN />
+	Molecular Networks
+[348]<a id=q-bio.NC />
+	Neurons and Cognition
+[349]<a id=q-bio.OT />
+	Other Quantitative Biology
+[350]<a id=q-bio.PE />
+	Populations and Evolution
+[351]<a id=q-bio.QM />
+	Quantitative Methods
+[352]<a id=q-bio.SC />
+	Subcellular Processes
+[353]<a id=q-bio.TO />
+	Tissues and Organs
+Quantitative Finance
+[357]<a id=main-q-fin />
+	Quantitative Finance
+q-fin
+[359]<a id=new-q-fin />
+	new
+[360]<a id=recent-q-fin />
+	recent
+[361]<a id=search-q-fin />
+	search
+includes: (see
+[363]<a id=details-q-fin />
+	detailed description
+):
+[364]<a id=q-fin.CP />
+	Computational Finance
+[365]<a id=q-fin.EC />
+	Economics
+[366]<a id=q-fin.GN />
+	General Finance
+[367]<a id=q-fin.MF />
+	Mathematical Finance
+[368]<a id=q-fin.PM />
+	Portfolio Management
+[16]<a id=q-fin.PR />
+	Pricing of Securities
+[369]<a id=q-fin.RM />
+	Risk Management
+[370]<a id=q-fin.ST />
+	Statistical Finance
+[371]<a id=q-fin.TR />
+	Trading and Market Microstructure
+Statistics
+[375]<a id=main-stat />
+	Statistics
+stat
+[377]<a id=new-stat />
+	new
+[378]<a id=recent-stat />
+	recent
+[379]<a id=search-stat />
+	search
+includes: (see
+[381]<a id=details-stat />
+	detailed description
+):
+[382]<a id=stat.AP />
+	Applications
+[383]<a id=stat.CO />
+	Computation
+[384]<a id=stat.ML />
+	Machine Learning
+[385]<a id=stat.ME />
+	Methodology
+[386]<a id=stat.OT />
+	Other Statistics
+[387]<a id=stat.TH />
+	Statistics Theory
+Electrical Engineering and Systems Science
+[391]<a id=main-eess />
+	Electrical Engineering and Systems Science
+eess
+[393]<a id=new-eess />
+	new
+[394]<a id=recent-eess />
+	recent
+[395]<a id=search-eess />
+	search
+includes: (see
+[397]<a id=details-eess />
+	detailed description
+):
+[398]<a id=eess.AS />
+	Audio and Speech Processing
+[399]<a id=eess.IV />
+	Image and Video Processing
+[400]<a id=eess.SP />
+	Signal Processing
+[401]<a id=eess.SY />
+	Systems and Control
+Economics
+[405]<a id=main-econ />
+	Economics
+econ
+[407]<a id=new-econ />
+	new
+[408]<a id=recent-econ />
+	recent
+[409]<a id=search-econ />
+	search
+includes: (see
+[411]<a id=details-econ />
+	detailed description
+):
+[412]<a id=econ.EM />
+	Econometrics
+[9]<a id=econ.GN />
+	General Economics
+[413]<a id=econ.TH />
+	Theoretical Economics
+About arXiv
+[418]<a />
+	General information
+[420]<a />
+	How to Submit to arXiv
+[422]<a />
+	Membership & Giving
+[424]<a />
+	Who We Are
+We gratefully acknowledge support from our
+[429]<a />
+	major funders
+[431]<a />
+	member institutions
+,
+        and all contributors.
+[436]<a />
+	About
+[438]<a />
+	Help
+[440]<a />
+	Contact
+[442]<a />
+	Subscribe
+[444]<a />
+	Copyright
+[446]<a />
+	Privacy
+[448]<a />
+	Accessibility
+[450]<a />
+	Operational Status
+	[451]<span />
+		(opens in new tab)

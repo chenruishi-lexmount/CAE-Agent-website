@@ -1,0 +1,20 @@
+[0|44|click]Go to dor.wa.gov
+[1|7|]Washington State Department of Revenue
+[1|14|click,select]{value="en"}English | Language
+[0|10|click]
+[1|65|]SAW User ID
+[1|66|click]Forgot User ID?
+[1|11|click,input,input_submit]SAW User ID
+[1|73|]Password
+[1|74|click]Forgot Password?
+[1|12|click,input,input_submit]Password
+[1|13|click]{unchecked}Show Password
+[1|17|click]Log in to My DOR
+[0|204|]New user?
+[0|85|click]Sign up
+[0|86|click]Check if you have a Secure Access Washington (SAW) user ID
+[0|88|]Need help logging in?
+[1|91|click]Check out our troubleshooting tips
+[1|93|click]Watch step-by-step instructions (video)
+[1|95|click]How to access your account information (help)
+[1|97|click]Why do I need to sign in again after coming from Secure Access Washington (SAW)

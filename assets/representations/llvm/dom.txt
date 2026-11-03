@@ -1,0 +1,206 @@
+[112]<a />
+	The LLVM Project Blog
+[114]<a title=Facebook />
+[115]<a title=GitHub />
+[116]<a title=Twitter />
+[117]<a title=Youtube />
+LLVM Project News and Details from the Trenches
+[123]<a />
+	[124]<i />
+	About
+[127]<a />
+	[128]<i />
+	Posts
+[131]<a />
+	[132]<i />
+	Tags
+[134]<a />
+	[135]<i />
+	llvm.org
+[140]<a title=Static Memory Planner for MLIR: A GSoC 2026 Journey />
+	Static Memory Planner for MLIR: A GSoC 2026 Journey
+By Krish Gupta
+Oct 19, 2026
+[148]<a />
+	#gsoc
+[149]<a />
+	#mlir
+[150]<a />
+	#bufferization
+[151]<a />
+	#memory-planning
+10 minute read
+Hi, I am Krish Gupta. Over the summer I worked with the LLVM Foundation as part of Google Summer of Code 2026 on building a static memory planner for MLIR, mentored by Matthias Springer and Javed Absar.
+[154]<a />
+	Read more…
+[157]<a title=GSoC 2026: Improving lit />
+	GSoC 2026: Improving lit
+By Prasoon Kumar (prasoon054)
+Oct 12, 2026
+[165]<a />
+	#GSoC
+[166]<a />
+	#lit
+[167]<a />
+	#testing
+[168]<a />
+	#performance
+[169]<a />
+	#python
+19 minute read
+This summer I worked on improving lit, the LLVM Integrated Tester, as part of Google Summer of Code 2026.
+I got interested in compilers after seeing how much heavy lifting happens underneath a single line of code, especially on parallel accelerators like GPUs.
+[172]<a />
+	Read more…
+[174]<a title=GSOC26: Sharing LLVM-libc's floating-point routines with compiler-rt />
+	GSOC26: Sharing LLVM-libc's floating-point routines with compiler-rt
+By Mohamed Emad
+Oct 5, 2026
+[182]<a />
+	#gsoc
+[183]<a />
+	#libc
+[184]<a />
+	#compiler-rt
+[185]<a />
+	#builtins
+[186]<a />
+	#floating-point
+[187]<a />
+	#math
+7 minute read
+Introduction Hello LLVM community! I am Mohamed Emad, CSE student at Zagazig University, Egypt. This summer I worked on the next step of the Hand-in-Hand project, an effort that began in 2024 with #91651 to make LLVM-libc a shared foundation that the rest of LLVM can build on.
+[190]<a />
+	Read more…
+[193]<a title=Remembering Johannes Doerfert />
+	Remembering Johannes Doerfert
+By Tanya Lattner
+Sep 24, 2026
+[201]<a />
+	#community
+[202]<a />
+	#in-memoriam
+7 minute read
+It is with great sadness that we share the news of the passing of Johannes Doerfert, on September 17, 2026, at the age of 36, after a battle with cancer.
+[205]<a />
+	Read more…
+[208]<a title=GSoC 2026: Improving HLSL Support in clangd />
+	GSoC 2026: Improving HLSL Support in clangd
+By Maria Fernanda Guimarães
+Sep 21, 2026
+[216]<a />
+	#GSoC
+[217]<a />
+	#clangd
+[218]<a />
+	#HLSL
+[219]<a />
+	#Clang
+9 minute read
+GSoC 2026: Improving HLSL Support in clangd HLSL (High-Level Shading Language) is a C++-like language used for GPU shader programming. Clang already parses HLSL and represents many of its constructs in the AST.
+[222]<a />
+	Read more…
+[225]<a title=GSoC 2026: Extending Clang API Notes for C++: Overload-Specific Annotations for Functions and Method... />
+	GSoC 2026: Extending Clang API Notes for C++: Overload-Specific Annotations for Functions and Methods
+By Dominic Stöcker
+Sep 14, 2026
+[233]<a />
+	#GSoC
+[234]<a />
+	#Clang
+[235]<a />
+	#API Notes
+[236]<a />
+	#Swift
+[237]<a />
+	#C++
+9 minute read
+Hi! I’m Dominic Stöcker, and during Google Summer of Code 2026 I worked on extending Clang API Notes for C++ with overload-specific annotations for functions and methods.
+My mentors were Gábor Horváth, John Hui, and Egor Zhdan.
+[240]<a />
+	Read more…
+[243]<a title=GSoC 2025: Advanced symbol resolution for Clang-Repl />
+	GSoC 2025: Advanced symbol resolution for Clang-Repl
+By Sahil Patidar
+Jan 19, 2026
+[251]<a />
+	#GSoC
+[252]<a />
+	#clang-repl
+[253]<a />
+	#orc-jit
+9 minute read
+Introduction Hello! I’m Sahil Patidar, and this summer I had the opportunity to participate in Google Summer of Code (GSoC) 2025 with the LLVM Organization. My project focused on enhancing ORC-JIT and Clang-Repl by introducing a new feature for advanced symbol resolution, aimed at improving runtime symbol handling and flexibility.
+[256]<a />
+	Read more…
+[259]<a title=Making LLVM Compilation Data Accessible: A Unified Visualization Tool for Compiler Artifacts />
+	Making LLVM Compilation Data Accessible: A Unified Visualization Tool for Compiler Artifacts
+By Miguel Cárdenas
+Dec 8, 2025
+[267]<a />
+	#GSoC
+[268]<a />
+	#optimization
+[269]<a />
+	#visualization
+[270]<a />
+	#tooling
+[271]<a />
+	#offloading
+5 minute read
+This summer, I had the incredible opportunity to work on an LLVM project through Google Summer of Code 2025. As an undergraduate student passionate about compilers, I set out to tackle a problem that many LLVM developers face daily: the overwhelming nature of compilation data scattered across different flags, output formats, and locations.
+[274]<a />
+	Read more…
+[277]<a title=GSoC 2025: ClangIR upstreaming />
+	GSoC 2025: ClangIR upstreaming
+By Amr Hesham (amrdeveloper)
+Dec 1, 2025
+[285]<a />
+	#GSoC
+[286]<a />
+	#LLVM
+[287]<a />
+	#MLIR
+[288]<a />
+	#ClangIR
+[289]<a />
+	#C++
+6 minute read
+Hello everyone 👋! My name is Amr Hesham, and for Google Summer of Code 2025, I’ve been working on the ClangIR Upstreaming project.
+My mentors were Bruno Cardoso Lopes, Andy Kaylor and Erich Keane.
+[292]<a />
+	Read more…
+[295]<a title=GSoC 2025: Rich Disassembler for LLDB />
+	GSoC 2025: Rich Disassembler for LLDB
+By Abdullah Amin
+Nov 10, 2025
+[303]<a />
+	#GSoC
+[304]<a />
+	#LLDB
+6 minute read
+Hello! I’m Abdullah Amin, and this summer I had the exciting opportunity to participate in Google Summer of Code (GSoC) 2025 with the LLVM Compiler Infrastructure project. My project focused on extending LLDB with a Rich Disassembler that annotates machine instructions with source-level variable information.
+[307]<a />
+	Read more…
+««
+[312]<li level=1 />
+[315]<li level=1 />
+	[316]<a aria-label=Page 1 role=button />
+[317]<li level=1 />
+	[318]<a aria-label=Page 2 role=button />
+[319]<li level=1 />
+	[320]<a aria-label=Page 3 role=button />
+[321]<li level=1 />
+	[322]<a aria-label=Page 4 role=button />
+[323]<li level=1 />
+	[324]<a aria-label=Page 5 role=button />
+[325]<li level=1 />
+	[326]<a aria-label=Next role=button />
+[329]<a aria-label=Last role=button />
+	»»
+llvm.org |
+Rendered by
+[335]<a title=Hugo />
+	Hugo
+[336]<a />
+	Subscribe

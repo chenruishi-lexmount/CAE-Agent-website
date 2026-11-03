@@ -1,0 +1,483 @@
+[557]<a />
+	Skip to main
+Open Shadow
+	|scroll element|<ul id=P0-1 role=listbox multiselectable=false /> (0.0 pages above, 0.0 pages below)
+Shadow End
+|scroll element[1737]<div id=MegaMenu-Content-1 /> (horizontal 0%)
+<svg /> <!-- SVG content collapsed -->
+Your Cart
+[2270]<main id=MainContent />
+	[2319]<a />
+		[2321]<source />
+		[2324]<source />
+		New
+	[2328]<a />
+		Men's Fastskin LZR HyperPro Jammer Black
+	Regular price
+	$240.00
+	[2340]<a />
+		[2342]<source />
+		New
+	[2349]<a />
+		Male Fastskin HyperSpark Jammer Black/Red
+	Regular price
+	$110.00
+	Choose color
+	[2361]<button />
+	[2363]<button />
+	[2365]<button />
+	[2367]<button />
+	[2373]<a />
+		[2378]<source />
+	[2382]<a />
+		Female Fastskin HyperSpark Openback Kneeskin Black/Red
+	Regular price
+	$154.00
+	[2394]<a />
+		[2396]<source />
+		[2399]<source />
+		New
+	[2403]<a />
+		Female Fastskin HyperSpark Printed Openback Kneeskin Black/Red
+	Regular price
+	$164.00
+	[2415]<a />
+		[2417]<source />
+		[2420]<source />
+		Sold out
+		New
+	[2426]<a />
+		Male Fastskin HyperSpark Printed Jammer Black/Red
+	Regular price
+	$122.00
+	Choose color
+	[2438]<button />
+	[2440]<button />
+	[2442]<button />
+	[2444]<button />
+	[2450]<a />
+		[2452]<source />
+		[2456]<source />
+		New
+	[2461]<a />
+		Women's Fastskin LZR Pure Intent 2.0 Printed Openback Kneeskin Black/Red
+	Regular price
+	$764.00
+	Choose color
+	[2473]<button />
+	[2475]<button />
+	[2477]<button />
+	[2483]<a />
+		[2485]<source />
+		[2489]<source />
+		New
+	[2494]<a />
+		Men's Fastskin LZR Pure Intent 2.0 Jammer Red/Black
+	Regular price
+	$454.00
+	Choose color
+	[2506]<button />
+	[2508]<button />
+		[2509]<span />
+			Men's Fastskin LZR Intent 2.0 Jammer Black
+	[2511]<button />
+	[2513]<button />
+	[2521]<a />
+		+3
+		options, Men's Fastskin LZR Pure Intent 2.0 Jammer Red/Black
+	[2527]<a />
+		[2529]<source />
+		[2533]<source />
+		New
+	[51]<a />
+		Men's Fastskin LZR Pure Intent 2.0 High Waist Jammer Red/Black
+	Regular price
+	$454.00
+	Choose color
+	[2549]<button />
+	[2551]<button />
+		[2552]<span />
+			Men's Fastskin LZR Intent 2.0 High Waist Jammer Black
+	[2554]<button />
+	[2556]<button />
+	[2562]<a />
+		[2564]<source />
+		[2568]<source />
+		New
+	[2573]<a />
+		Women's Fastskin LZR Pure Intent 2.0 Openback Kneeskin Red/Black
+	Regular price
+	$674.00
+	Choose color
+	[2585]<button />
+	[2587]<button />
+	[2589]<button />
+		[2590]<span />
+			Women's Fastskin LZR Intent 2.0 Openback Kneeskin Black
+	[2592]<button />
+	[2600]<a />
+		+3
+		options, Women's Fastskin LZR Pure Intent 2.0 Openback Kneeskin Red/Black
+	[2606]<a />
+		[2608]<source />
+		[2612]<source />
+		New
+	[2617]<a />
+		Adult Fastskin Hyper Elite Mirrored Goggles Smoke/Red
+	Regular price
+	$88.00
+	Choose color
+	[2629]<button />
+	[2631]<button />
+	[2637]<a />
+		[2639]<source />
+		[2643]<source />
+		New
+	[2648]<a />
+		Women's Fastskin LZR Pure Intent 2.0 Closedback Kneeskin Red/Black
+	Regular price
+	$674.00
+	Choose color
+	[2660]<button />
+	[2662]<button />
+		[2663]<span />
+			Women's Fastskin LZR Intent 2.0 Closedback Kneeskin Black
+	[2665]<button />
+	[2667]<button />
+	[2673]<a />
+		[2675]<source />
+		[2679]<source />
+		New
+	[2684]<a />
+		Men's Fastskin LZR Pure Intent 2.0 Printed Jammer Black/Red
+	Regular price
+	$544.00
+	Choose color
+	[2696]<button />
+	[2698]<button />
+	[2700]<button />
+	Previous Slide
+	[2709]<button />
+		Go to slide 1
+	[2711]<button />
+		Go to slide 2
+	[2713]<button />
+		Go to slide 3
+	[2715]<button />
+		Go to slide 4
+	[2717]<button />
+		Go to slide 5
+	[2719]<button />
+		Go to slide 6
+	[2721]<button />
+		Go to slide 7
+	[2723]<button />
+		Go to slide 8
+	[2725]<button />
+		Go to slide 9
+	[2727]<button />
+		Next Slide
+	THIS IS SWIM INTELLIGENCE
+	Smart technology, built into the Vanquisher 3.0 goggle and connected to the Speedo iQ app.
+	[3353]<a />
+		Shop Now
+	THE SUIT OF CHAMPIONS
+	Fastskin race suits - built for swimmers who notice every detail and value every second.
+	[3360]<a />
+		Shop Now
+	PRECISION LIKE NO OTHER
+	Your ultimate racing partner. Goggles engineered for personalised performance.
+	[3368]<a />
+		Shop Now
+	SPEEDO DMC
+	Fins that deliver strength, speed, and precision to take your training further.
+	[3376]<a />
+		Shop Now
+	“I’ve grown up with Speedo. It’s been with me every step of my journey”
+	Léon Marchand, Olympian
+	[3409]<a />
+		View Athletes
+|scroll element|<iframe id=web-pixel-sandbox-APP-2853601647-LAX-49d3b31aw169a7c20pfc9cb2c9m68241e55 /> (scroll)
+|scroll element|<iframe id=web-pixel-sandbox-CUSTOM-179077487-LAX-49d3b31aw169a7c20pfc9cb2c9m68241e55 /> (scroll)
+|scroll element|<iframe id=web-pixel-sandbox-CUSTOM-179110255-LAX-49d3b31aw169a7c20pfc9cb2c9m68241e55 /> (scroll)
+|scroll element|<iframe id=web-pixel-sandbox-CUSTOM-179143023-LAX-49d3b31aw169a7c20pfc9cb2c9m68241e55 /> (scroll)
+|scroll element|<iframe id=web-pixel-sandbox-CUSTOM-179175791-LAX-49d3b31aw169a7c20pfc9cb2c9m68241e55 /> (scroll)
+|scroll element|<iframe id=web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-49d3b31aw169a7c20pfc9cb2c9m68241e55 /> (scroll)
+Help & Information
+[3478]<a />
+	Contact Us
+[3480]<a />
+	Help Center & FAQs
+[3482]<a />
+	Returns
+[3484]<a />
+	Shipping
+About Speedo
+[3514]<a />
+	Our Story
+[3516]<a />
+	Team Speedo
+[3518]<a />
+	Black Friday
+Useful Information
+[3550]<a />
+	Blog
+[62]<a />
+	Size Guides
+[3553]<a />
+	Klarna
+[3555]<a />
+	Discounts
+Open Shadow
+	[3567]<button role=combobox id=P0-0 aria-autocomplete=none aria-label=Countries expanded=false />
+		US (USD $)
+	|scroll element[3577]<ul id=P0-1 role=listbox multiselectable=false /> (0.0 pages above, 0.0 pages below)
+		[3578]<li id=option-P0-1-0 role=option selected=false />
+			[3579]<div />
+				[3580]<div />
+					[3581]<img />
+				[3582]<span />
+					AL (GBP £)
+		[3583]<li id=option-P0-1-1 role=option selected=false />
+			[3584]<div />
+				[3585]<div />
+					[3586]<img />
+				[3587]<span />
+					DZ (GBP £)
+		[3588]<li id=option-P0-1-2 role=option selected=false />
+			[3589]<div />
+				[3590]<div />
+					[3591]<img />
+				[3592]<span />
+					AD (GBP £)
+		[3593]<li id=option-P0-1-3 role=option selected=false />
+			[3594]<div />
+				[3595]<div />
+					[3596]<img />
+				[3597]<span />
+					AM (GBP £)
+		[3598]<li id=option-P0-1-4 role=option selected=false />
+			[3599]<div />
+				[3600]<div />
+					[3601]<img />
+				[3602]<span />
+					AT (EUR €)
+		[3603]<li id=option-P0-1-5 role=option selected=false />
+			[3604]<div />
+				[3605]<div />
+					[3606]<img />
+				[3607]<span />
+					AZ (GBP £)
+		[3608]<li id=option-P0-1-6 role=option selected=false />
+			[3609]<div />
+				[3610]<div />
+					[3611]<img />
+				[3612]<span />
+					BE (EUR €)
+		[3613]<li id=option-P0-1-7 role=option selected=false />
+			[3614]<div />
+				[3615]<div />
+					[3616]<img />
+				[3617]<span />
+					BG (EUR €)
+		[3618]<li id=option-P0-1-8 role=option selected=false />
+			[3619]<div />
+				[3620]<div />
+					[3621]<img />
+				[3622]<span />
+					CA (CAD $)
+		[3623]<li id=option-P0-1-9 role=option selected=false />
+			[3624]<div />
+				[3625]<div />
+					[3626]<img />
+				[3627]<span />
+					CL (GBP £)
+		[3628]<li id=option-P0-1-10 role=option selected=false />
+			[3629]<div />
+				[3630]<div />
+					[3631]<img />
+				[3632]<span />
+					CN (GBP £)
+		[3633]<li id=option-P0-1-11 role=option selected=false />
+			[3634]<div />
+				[3635]<div />
+					[3636]<img />
+				[3637]<span />
+					HR (EUR €)
+		[3638]<li id=option-P0-1-12 role=option selected=false />
+			[3639]<div />
+				[3640]<div />
+					[3641]<img />
+				[3642]<span />
+					CY (EUR €)
+		[3643]<li id=option-P0-1-13 role=option selected=false />
+			[3644]<div />
+				[3645]<div />
+					[3646]<img />
+				[3647]<span />
+					CZ (EUR €)
+		[3648]<li id=option-P0-1-14 role=option selected=false />
+			[3649]<div />
+				[3650]<div />
+					[3651]<img />
+				[3652]<span />
+					DK (EUR €)
+		[3653]<li id=option-P0-1-15 role=option selected=false />
+			[3654]<div />
+				[3655]<div />
+					[3656]<img />
+				[3657]<span />
+					EE (EUR €)
+		[3658]<li id=option-P0-1-16 role=option selected=false />
+			[3659]<div />
+				[3660]<div />
+					[3661]<img />
+				[3662]<span />
+					FI (EUR €)
+		[3663]<li id=option-P0-1-17 role=option selected=false />
+			[3664]<div />
+				[3665]<div />
+					[3666]<img />
+				[3667]<span />
+					FR (EUR €)
+		[3668]<li id=option-P0-1-18 role=option selected=false />
+			[3669]<div />
+				[3670]<div />
+					[3671]<img />
+				[3672]<span />
+					DE (EUR €)
+		[3673]<li id=option-P0-1-19 role=option selected=false />
+			[3674]<div />
+				[3675]<div />
+					[3676]<img />
+				[3677]<span />
+					GI (GBP £)
+Shadow End
+[3685]<span />
+	[3686]<svg role=img /> <!-- SVG content collapsed -->
+[3692]<span />
+	[3693]<svg role=img /> <!-- SVG content collapsed -->
+[3705]<span />
+	[3706]<svg role=img /> <!-- SVG content collapsed -->
+[3721]<span />
+	[3722]<svg role=img /> <!-- SVG content collapsed -->
+[3727]<span />
+	[3728]<svg role=img /> <!-- SVG content collapsed -->
+[3733]<span />
+	[3734]<svg role=img /> <!-- SVG content collapsed -->
+[3757]<span />
+	[3758]<svg role=img /> <!-- SVG content collapsed -->
+[3767]<span />
+	[3768]<svg role=img /> <!-- SVG content collapsed -->
+[3776]<span />
+	[3777]<svg role=img /> <!-- SVG content collapsed -->
+[3788]<span />
+	[3789]<svg role=img /> <!-- SVG content collapsed -->
+[3796]<span />
+	[3797]<svg role=img /> <!-- SVG content collapsed -->
+[3802]<span />
+	[3803]<svg role=img /> <!-- SVG content collapsed -->
+© 2026,
+[3810]<a />
+	Speedo
+.
+         All rights reserved.
+[3814]<a />
+	Terms & Conditions
+[3816]<a />
+	Privacy Notice
+[3818]<a />
+	Cookie Policy
+[3820]<a />
+	Modern Slavery Report
+[3822]<a />
+	Declaration Of Conformity
+[3824]<a />
+	Section 172 Statement
+Open Shadow
+	<svg /> <!-- SVG content collapsed -->
+	|scroll element|<ul id=P0-1 role=listbox multiselectable=false /> (0.0 pages above, 0.0 pages below)
+		[3892]<li id=option-P0-1-8 role=option selected=false />
+		[3896]<li id=option-P0-1-9 role=option selected=false />
+			[3897]<div />
+				[3898]<img />
+			[3899]<span />
+				Chile (GBP £)
+		[3900]<li id=option-P0-1-10 role=option selected=false />
+			[3901]<div />
+				[3902]<img />
+			[3903]<span />
+				China (GBP £)
+		[3904]<li id=option-P0-1-11 role=option selected=false />
+			[3905]<div />
+				[3906]<img />
+			[3907]<span />
+				Croatia (EUR €)
+		[3908]<li id=option-P0-1-12 role=option selected=false />
+			[3909]<div />
+				[3910]<img />
+			[3911]<span />
+				Cyprus (EUR €)
+		[3912]<li id=option-P0-1-13 role=option selected=false />
+			[3913]<div />
+				[3914]<img />
+			[3915]<span />
+				Czechia (EUR €)
+		[3916]<li id=option-P0-1-14 role=option selected=false />
+			[3917]<div />
+				[3918]<img />
+			[3919]<span />
+				Denmark (EUR €)
+		[3920]<li id=option-P0-1-15 role=option selected=false />
+			[3921]<div />
+				[3922]<img />
+			[3923]<span />
+				Estonia (EUR €)
+		[3924]<li id=option-P0-1-16 role=option selected=false />
+			[3925]<div />
+				[3926]<img />
+			[3927]<span />
+				Finland (EUR €)
+		[3928]<li id=option-P0-1-17 role=option selected=false />
+			[3929]<div />
+				[3930]<img />
+			[3931]<span />
+				France (EUR €)
+		[3932]<li id=option-P0-1-18 role=option selected=false />
+			[3933]<div />
+				[3934]<img />
+			[3935]<span />
+				Germany (EUR €)
+		[3936]<li id=option-P0-1-19 role=option selected=false />
+			[3937]<div />
+				[3938]<img />
+			[3939]<span />
+				Gibraltar (GBP £)
+Shadow End
+|scroll element|<iframe id=awin-plugin-TvScientific /> (scroll)
+Open Shadow
+	|scroll element|<iframe title=Shop Pay cart sync /> (scroll)
+		[9715]<div />
+Shadow End
+|scroll element|<iframe id=CrossStorageClient-60639e88-06d5-40a2-b8fe-c93515530b5a /> (scroll)
+|scroll element|<iframe id=CrossStorageClient-7d04286c-2be5-4a52-ab7b-4ca759acf36b /> (scroll)
+Open Shadow
+	[5009]<om-clickable-element />
+		[5008]<button />
+	[4173]<div role=dialog />
+		|scroll element|<div /> (0.0 pages above, 0.1 pages below)
+			Sign up to our emails and get 20% off your first order
+			Plus, be the first to know about our Black Friday offers, new collections and more.
+			|SHADOW(open)|[5027]<input aria-label=Email address maxlength=255 id=om_overlay_email_input type=email name=ue placeholder=Email required=true />
+			Date of birth (optional)
+			[5077]<button id=om-overlay-date_of_birth-control role=combobox aria-label=MM expanded=false />
+				MM
+			|SHADOW(open)|[5065]<input placeholder=DD />
+			|SHADOW(open)|[5066]<input placeholder=YYYY />
+			[5032]<button type=submit />
+				Sign up
+			By signing up, you agree to receive personalised news and offers (including email tracking) from Speedo and other selected Pentland brands. See
+			[5041]<a />
+				Privacy Notice
+			for more info.
+Shadow End

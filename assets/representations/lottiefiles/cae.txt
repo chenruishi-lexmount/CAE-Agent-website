@@ -1,0 +1,33 @@
+[0|76|hover]
+  [1|82|]English
+  [1|83|click]{role=button cls="language toggle"}
+[0|90|click]Sign in
+[0|95|click]{url="/?hsLang=en"}
+[0|134|click]Contact us
+[0|138|]How can we help you?
+[0|10|click,input,input_submit]Search for answers | How can we help you? | This is a search field with an auto-suggest feature attached.
+[0|146|click]Search
+[0|153|click]{role=listitem}
+[0|158|click,hover]{url="/getting-started?hsLang=en"}
+  [1|165|]Getting Started
+  [1|166|]Learn the basics of using LottieFiles, from creating your account to finding and using animations.
+[0|168|click,hover]{url="/subscriptions-billing?hsLang=en"}
+  [1|174|]Subscriptions & Billing
+  [1|175|]Manage your account subscription plans and billing information.
+[0|177|click,hover]{url="/workspace-guide?hsLang=en"}
+  [1|184|]Workspace Guide
+  [1|185|]Learn how to set up your workspace and start using the available tools effectively.
+[0|187|click,hover]{url="/lottie-creator?hsLang=en"}
+  [1|194|]Lottie Creator
+  [1|195|]Create and edit Lottie animations using our web-based animation editor.
+[0|197|click,hover]{url="/design-plugins?hsLang=en"}
+  [1|204|]Design Plugins
+  [1|205|]Install and use LottieFiles plugins in Figma, After Effects, Canva, and many more design tools.
+[0|217|click]Follow us on Twitter
+[0|222|click]Follow us on Instagram
+[0|227|click]Subscribe to us on YouTube
+[0|232|click]Email us
+[0|237|]Copyright © 2026, LottieFiles
+[0|255|click]Chatbot notifications
+  [1|258|]Hi! What can I help you with?
+[0|260|click]Open

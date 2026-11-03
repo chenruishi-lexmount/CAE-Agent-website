@@ -1,0 +1,30 @@
+[44]<a title=Go to dor.wa.gov />
+	[7]<img alt=Washington State Department of Revenue />
+|SHADOW(open)|*[14]<select id=select-language aria-label=Language expanded=false compound_components=(name=Dropdown Toggle,role=button),(name=Options,role=listbox,count=2,options=English|Spanish) />
+[10]<form id=frmLogin />
+	SAW User ID
+	[66]<a />
+		Forgot User ID?
+	|SHADOW(open)|[11]<input type=text id=username placeholder=SAW User ID autocomplete=off />
+	Password
+	[74]<a />
+		Forgot Password?
+	|SHADOW(open)|[12]<input type=password placeholder=Password autocomplete=off />
+	[13]<input type=checkbox id=cbxShowPassword checked=false />
+	Show Password
+	[17]<button type=submit id=signin />
+		Log in to My DOR
+New user?
+[85]<a />
+	Sign up
+[86]<a />
+	Check if you have a Secure Access Washington (SAW) user ID
+Need help logging in?
+[91]<a />
+	Check out our troubleshooting tips
+[93]<a />
+	Watch step-by-step instructions (video)
+[95]<a />
+	How to access your account information (help)
+[97]<a />
+	Why do I need to sign in again after coming from Secure Access Washington (SAW)
