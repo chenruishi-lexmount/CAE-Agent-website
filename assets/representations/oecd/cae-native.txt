@@ -1,0 +1,93 @@
+[0|84|click]
+[1|92|click]OECD.org
+[1|93|click]Data
+[1|94|click]Publications
+[1|95|click]OECD Legal Instruments
+[1|96|click]News & Events
+[1|97|click]About
+[1|107|click]{url="/en"}
+[1|7|]OECD Legal Instruments
+[1|108|]aanonymous
+[1|113|click]Home
+[1|115|click]About
+[1|117|click]Full list
+[1|119|click]Advanced search
+[1|121|click]Adherences
+[1|123|click]Key figures
+[2|127|click]
+[3|351|]FR
+[3|21|click]{role=svg}
+[1|142|]The Compendium of OECD Legal Instruments provides the text of all the legal instruments adopted in the framework of the Organisation for Economic Co-operation and Development (OECD), as well as related information including the list of OECD Members and non-OECD Members having adhered to them (the Adherents).
+[2|148|]Quick Search
+[2|151|click]
+[3|152|]Type(s)
+[3|153|click]
+[4|51|click,input,input_submit]Type(s) | All
+[5|157|click]Open
+[2|165|click]
+[3|166|]Committee(s)
+[3|167|click]
+[4|52|click,input,input_submit]Committee(s) | All
+[5|171|click]Open
+[2|179|click]
+[3|180|]Theme(s)
+[3|181|click]
+[4|53|click,input,input_submit]Theme(s) | All
+[5|185|click]Open
+[2|195|click]
+[3|196|]From
+[3|197|click]
+[4|54|click,input,input_submit]From | All
+[5|201|click]Open
+[2|209|click]
+[3|210|]To
+[3|211|click]
+[4|55|click,input,input_submit]To | All
+[5|215|click]Open
+[2|223|]Title or reference
+[3|56|click,input,input_submit]Title or reference
+[2|230|]{disabled}Search
+[1|235|]Focus
+[2|237|click]
+[3|241|]2026 Annual Update on OECD Standard-Setting
+[4|244|]The
+[4|245|click]Annual Update on OECD Standard-Setting
+[4|247|]highlights the adoption of eight new or updated legal instruments in the period between the 2025 Ministerial Council Meeting (MCM) and the 2026 MCM (4 June...
+[2|248|click]
+[3|252|]Report on the Implementation of the OECD Recommendation Concerning Effective Action against Hard Core Cartels
+[4|376|]A
+[4|255|click]report
+[4|378|]on the implementation, dissemination, and continued relevance of the Recommendation was presented to Council in 2025, assessing the first five years of the Recommendation’s implementation. The Report found that the implementation progress between 2019 and 2024 can be characterised by...
+[2|256|click]
+[3|260|]Report on the Implementation of the OECD Recommendation Concerning Guidelines on Earthquake Safety in Schools
+[4|380|]The
+[4|263|click]Report
+[4|382|]concludes that Respondents have, overall, continued to make progress in implementing the provisions and addressing the principles around the seven major elements of the
+[4|384|](seismic safety policy, accountability, codes and enforcement, training and qualification, preparedness and planning,...
+[2|265|click]
+[3|269|]Report on the Implementation of the OECD Recommendation on the Determination of Transfer Pricing between Associated Enterprises
+[4|388|]concludes that Adherents have effectively implemented the
+[4|273|click]Recommendation
+[4|390|]and describes their substantial and continued efforts to incorporate the arm’s length principle and the OECD Transfer Pricing Guidelines for Multinational Enterprises and Tax Administrations in their transfer pricing systems....
+[1|278|]Recent Developments
+[2|281|click]{url="/en/instruments/OECD-LEGAL-0453"}
+[3|282|click]
+[4|284|]OECD/LEGAL/0453
+[2|290|click]{url="/en/instruments/OECD-LEGAL-0508"}
+[3|291|click]
+[4|293|]OECD/LEGAL/0508
+[2|299|click]{url="/en/instruments/OECD-LEGAL-0334"}
+[3|300|click]
+[4|302|]OECD/LEGAL/0334
+[2|307|click]{url="/en/instruments/OECD-LEGAL-5015"}
+[3|308|click]
+[4|310|]OECD/LEGAL/5015
+[2|316|click]{url="/en/instruments/OECD-LEGAL-5011"}
+[3|317|click]
+[4|319|]OECD/LEGAL/5011
+[2|24|click]
+[3|324|]{unchecked}
+[2|326|]Inform me about recent developments
+[1|327|]©OECD2026
+[2|405|]The present Compendium of OECD Legal Instruments is owned by the OECD. It represents significant time and resource investment and shall not be reproduced in whole or significant part without express permission from the OECD. For use, reproduction and translation of individual Legal Instruments, please consult the
+[2|329|click]Terms and Conditions.

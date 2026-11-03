@@ -1,0 +1,123 @@
+[84]<div id=root />
+	[92]<a />
+		OECD.org
+	[93]<a />
+		Data
+	[94]<a />
+		Publications
+	[95]<a />
+		OECD Legal Instruments
+	[96]<a />
+		News & Events
+	[97]<a />
+		About
+	[107]<a />
+	OECD Legal Instruments
+	[18]<div />
+	anonymous
+	[113]<a />
+		Home
+	[115]<a />
+		About
+	[117]<a />
+		Full list
+	[119]<a />
+		Advanced search
+	[121]<a />
+		Adherences
+	[123]<a />
+		Key figures
+	[127]<div />
+		[20]<svg /> <!-- SVG content collapsed -->
+		FR
+	[130]<div />
+		[21]<svg /> <!-- SVG content collapsed -->
+	The Compendium of OECD Legal Instruments provides the text of all the legal instruments adopted in the framework of the Organisation for Economic Co-operation and Development (OECD), as well as related information including the list of OECD Members and non-OECD Members having adhered to them (the Adherents).
+	Quick Search
+	Type(s)
+	[153]<div />
+		|SHADOW(open)|[51]<input autocomplete=list id=:r0: placeholder=All type=text aria-autocomplete=list role=combobox expanded=false />
+		[156]<div />
+			[157]<button aria-label=Open title=Open />
+	Committee(s)
+	[167]<div />
+		|SHADOW(open)|[52]<input autocomplete=list id=:r2: placeholder=All type=text aria-autocomplete=list role=combobox expanded=false />
+		[170]<div />
+			[171]<button aria-label=Open title=Open />
+	Theme(s)
+	[181]<div />
+		|SHADOW(open)|[53]<input autocomplete=list id=:r4: placeholder=All type=text aria-autocomplete=list role=combobox expanded=false />
+		[184]<div />
+			[185]<button aria-label=Open title=Open />
+	From
+	[197]<div />
+		|SHADOW(open)|[54]<input autocomplete=list id=:r6: placeholder=All type=text aria-autocomplete=list role=combobox expanded=false />
+		[200]<div />
+			[201]<button aria-label=Open title=Open />
+	To
+	[211]<div />
+		|SHADOW(open)|[55]<input autocomplete=list id=:r8: placeholder=All type=text aria-autocomplete=list role=combobox expanded=false />
+		[214]<div />
+			[215]<button aria-label=Open title=Open />
+	Title or reference
+	[224]<div />
+		|SHADOW(open)|[56]<input id=:ra: name=reference type=text />
+	Search
+	|scroll element|<div id=focus-box /> (0.0 pages above, 1.3 pages below)
+		Focus
+		[237]<div />
+			2026 Annual Update on OECD Standard-Setting
+			The
+			[245]<a />
+				Annual Update on OECD Standard-Setting
+			highlights the adoption of eight new or updated legal instruments in the period between the 2025 Ministerial Council Meeting (MCM) and the 2026 MCM (4 June...
+		[248]<div />
+			Report on the Implementation of the OECD Recommendation Concerning Effective Action against Hard Core Cartels
+			[255]<a />
+				report
+			on the implementation, dissemination, and continued relevance of the Recommendation was presented to Council in 2025, assessing the first five years of the Recommendation’s implementation. The Report found that the implementation progress between 2019 and 2024 can be characterised by...
+		[256]<div />
+			Report on the Implementation of the OECD Recommendation Concerning Guidelines on Earthquake Safety in Schools
+			concludes that Respondents have, overall, continued to make progress in implementing the provisions and addressing the principles around the seven major elements of the
+			(seismic safety policy, accountability, codes and enforcement, training and qualification, preparedness and planning,...
+		[265]<div />
+			Report on the Implementation of the OECD Recommendation on the Determination of Transfer Pricing between Associated Enterprises
+			concludes that Adherents have effectively implemented the
+			[273]<a />
+				Recommendation
+			and describes their substantial and continued efforts to incorporate the arm’s length principle and the OECD Transfer Pricing Guidelines for Multinational Enterprises and Tax Administrations in their transfer pricing systems....
+	Recent Developments
+	[281]<a />
+		[282]<button />
+			OECD/LEGAL/0453
+			[286]<div />
+				Recommendation of the Council on Consumer Protection in the field of Consumer Credit
+	[290]<a />
+		[291]<button />
+			OECD/LEGAL/0508
+			[295]<div />
+				Recommendation of the Council on Quantum Technologies
+	[299]<a />
+		[300]<button />
+			OECD/LEGAL/0334
+			[303]<div />
+				Decision of the Council revising the OECD Standard Codes for the Official Testing of Agricultural and Forestry Tractors
+	[307]<a />
+		[308]<button />
+			OECD/LEGAL/5015
+			[312]<div />
+				DAC Recommendation on Untying Official Development Assistance
+	[316]<a />
+		[317]<button />
+			OECD/LEGAL/5011
+			[321]<div />
+				Sector Understanding on Export Credits for Civil Aircraft
+	[24]<span />
+		[25]<svg /> <!-- SVG content collapsed -->
+		[26]<span />
+	Inform me about recent developments
+	©OECD
+	2026
+	The present Compendium of OECD Legal Instruments is owned by the OECD. It represents significant time and resource investment and shall not be reproduced in whole or significant part without express permission from the OECD. For use, reproduction and translation of individual Legal Instruments, please consult the
+	[329]<a />
+		Terms and Conditions.
