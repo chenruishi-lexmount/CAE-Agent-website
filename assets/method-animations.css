@@ -59,14 +59,14 @@
 @keyframes method-emit{from{opacity:0;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}@keyframes method-packet{0%,65%{opacity:0;transform:translateX(-3px)}75%{opacity:1}100%{opacity:0;transform:translateX(14px)}}@keyframes method-old{0%,30%{opacity:1}65%,100%{opacity:.42}}@keyframes method-new{0%,30%{opacity:0;transform:translateY(5px)}65%,100%{opacity:1;transform:translateY(0)}}@keyframes method-append{0%,30%{opacity:0;transform:translateX(-10px)}70%,100%{opacity:1;transform:translateX(0)}}@keyframes method-type{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0)}}
 @media(max-width:1050px){.method-animation{padding:22px 20px}.method-cards{grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.method-card-title{min-height:30px}.method-card-title :is(h3,h4){font-size:14px}.method-visual{height:110px}.method-io,.method-process{font-size:11px;min-height:32px}.method-process{min-height:36px}.method-construction .method-card:nth-child(3) .method-connector{display:none}.method-agent .method-cards{gap:15px}.method-agent .method-card{padding:13px 10px}.method-agent .method-card-title{min-height:50px}.method-agent .method-card-title :is(h3,h4){font-size:13px}.method-agent .method-io,.method-agent .method-process{font-size:10px}.method-agent .method-connector{width:12px}.method-detail-grid{gap:20px}.method-prefix{padding-left:17px}.prefix-row{font-size:9px}.prefix-append{padding:5px}.prefix-notes{flex-basis:45px;padding:5px}}
 @media(max-width:700px){.method-animation{padding:18px 13px}.method-cards,.method-agent .method-cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.method-card,.method-agent .method-card{padding:13px 10px}.method-card-title,.method-agent .method-card-title{min-height:48px;gap:6px}.method-card-title :is(h3,h4),.method-agent .method-card-title :is(h3,h4){font-size:13px}.method-card-title b{flex-basis:21px;height:21px;font-size:10px}.method-visual,.method-agent .method-visual{height:94px;margin-top:6px;margin-bottom:12px}.method-io,.method-agent .method-io{font-size:11px;min-height:46px}.method-process,.method-agent .method-process{font-size:11px;min-height:49px;margin:5px 0 8px}.method-output,.method-agent .method-output{min-height:51px}.method-card .method-connector{width:10px;left:calc(100% + 2px)}.method-card:nth-child(even) .method-connector,.method-construction .method-card:nth-child(3) .method-connector{display:none}.method-construction .method-card:nth-child(3) .method-connector{display:block}.method-detail-grid{grid-template-columns:1fr;gap:22px}.method-prefix{border-left:0;border-top:1px solid #e0e8ee;padding:19px 0 0}.method-detail :is(h3,h4){font-size:13px}.detail-diff code{font-size:10px}.prefix-row{font-size:9px}.prefix-row small{flex-basis:23px}.prefix-stable{padding:6px}.prefix-notes{flex-basis:40px}.mini-outline code{font-size:7.6px}.mini-patch code{font-size:8px}.execute-action{font-size:9px}.method-animation figcaption{font-size:10px}}
-@media(prefers-reduced-motion:reduce){.method-animation *{animation:none!important;transition:none!important}.method-animation .scan,.method-animation }
+@media(prefers-reduced-motion:reduce){.method-animation *{animation:none!important;transition:none!important}.method-animation .scan,.method-animation .return-pulse{display:none}}
 .method-construction .method-io,.method-construction .method-process{font-size:11px}.method-card.is-complete .tree-node{fill:#a9cfe4}.method-card.is-complete .occluded,.method-card.is-complete .occluded+.cover,.method-card.is-complete .wrapper{opacity:.08}.method-card.is-complete .tick{opacity:1}.method-card.is-complete .merge-a,.method-card.is-complete .merge-b{opacity:0}.method-card.is-complete .patch-old{opacity:.42}
 .method-animation{scroll-margin-top:90px}
 
-/* Reveal the construction in order without shifting the six reserved columns. */
-.method-construction[data-ready=true] .method-card{transition:opacity .4s ease,transform .4s ease,background .25s,border-color .25s,box-shadow .25s}
-.method-construction[data-ready=true] .method-card:not(.is-revealed){visibility:hidden;opacity:0;transform:translateX(12px);pointer-events:none}
-.method-construction[data-ready=true] .method-card:not(.is-connected) .method-connector{visibility:hidden}
+/* Reveal each method in order while reserving its complete layout. */
+.method-animation[data-ready=true] .method-card{transition:opacity .4s ease,transform .4s ease,background .25s,border-color .25s,box-shadow .25s}
+.method-animation[data-ready=true] .method-card:not(.is-revealed){visibility:hidden;opacity:0;transform:translateX(12px);pointer-events:none}
+.method-animation[data-ready=true] .method-card:not(.is-connected) .method-connector{visibility:hidden}
 .method-animation figcaption.method-description{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
 .method-return{position:relative;display:flex;flex-direction:column;gap:2px;align-items:center;margin:4px 11% 0;padding:0;min-height:64px;color:#4e7085;text-align:center;font-size:11px;line-height:1.5}
 .method-return-path{display:block;width:100%;height:42px;overflow:visible;fill:none;stroke:#b0c5d1;stroke-width:1.25}
@@ -76,3 +76,19 @@
 .method-agent[data-step="4"] .return-pulse{animation:method-feedback 2.8s ease-in-out both}
 @keyframes method-feedback{0%{stroke-dashoffset:1;opacity:0}12%{opacity:1}88%{opacity:1}100%{stroke-dashoffset:0;opacity:0}}
 @media(max-width:700px){.method-return{font-size:10px;min-height:68px}}
+
+/* The Agent reveals supporting panels in their phase, then the Effect return last. */
+.method-agent[data-ready=true] :is(.method-return,.method-detail){transition:opacity .4s ease,transform .4s ease}
+.method-agent[data-ready=true] :is(.method-return,.method-detail):not(.is-revealed){visibility:hidden;opacity:0;transform:translateY(8px);pointer-events:none}
+/* Larger construction cards keep input/output readable across all six columns. */
+.method-construction .method-card{padding:19px 12px 18px}
+.method-construction .method-card-title{min-height:56px}
+.method-construction .method-card-title :is(h3,h4){font-size:15px;line-height:1.5}
+.method-construction .method-visual{height:124px;margin-top:12px;margin-bottom:20px}
+.method-construction .method-io{font-size:14px;line-height:1.6;min-height:75px}
+.method-construction .method-io strong{font-size:13px;line-height:1.5;margin-bottom:6px}
+.method-construction .method-process{font-size:13px;line-height:1.65;min-height:70px;margin:10px 0 12px}
+.method-construction .method-output{min-height:85px;padding-top:14px}
+@media(max-width:700px){.method-construction .method-card{padding:16px 11px}.method-construction .method-card-title :is(h3,h4){font-size:14px}.method-construction .method-visual{height:108px;margin-bottom:16px}.method-construction .method-io{font-size:13px;min-height:72px}.method-construction .method-io strong{font-size:12px}.method-construction .method-process{font-size:12px;min-height:68px}.method-construction .method-output{min-height:80px}}
+.method-construction .mini-outline code{font-size:10px;line-height:1.6}
+@media(max-width:700px){.method-construction .mini-outline code{font-size:9px}}
