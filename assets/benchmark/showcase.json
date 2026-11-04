@@ -1,0 +1,350 @@
+{
+  "schema_version": 1,
+  "paper_figure": 4,
+  "paper_tables": [
+    3,
+    4
+  ],
+  "paper_sha256": "f1901c75ee2c0c0228dbe15d816eb257740d8deaa3b4ccd842af67f171237f62",
+  "scorer_sha256": "0731e688dbfade6382a8cb53d1b9ffcbed80586242d48ed29e60d06ec98ad296",
+  "figure_sha256": "e45245546318797ff9e1f7b8a1f625ed5d1ca94ecd59638fedad9e4511e9aee1",
+  "stats": {
+    "task_count": 197,
+    "unique_start_hosts": 129,
+    "check_count": 548,
+    "median_checks": 3,
+    "min_checks": 1,
+    "max_checks": 9,
+    "by_source": {
+      "Online-Mind2Web": {
+        "tasks": 81,
+        "start_hosts": 52,
+        "checks": 229
+      },
+      "WebVoyager": {
+        "tasks": 43,
+        "start_hosts": 8,
+        "checks": 107
+      },
+      "WebGym": {
+        "tasks": 73,
+        "start_hosts": 73,
+        "checks": 212
+      }
+    },
+    "evidence_groups": {
+      "URL or tabs": 122,
+      "Page content or controls": 129,
+      "Storage or API state": 3,
+      "Interaction history": 17,
+      "Submitted answer": 100
+    },
+    "source": "Published paper, Figure 4 and Tables 3–4",
+    "categories": [
+      {
+        "category_id": "education_research",
+        "label": "Education & research",
+        "tasks": 49,
+        "percentage": 24.873096446700508
+      },
+      {
+        "category_id": "technology",
+        "label": "Technology",
+        "tasks": 32,
+        "percentage": 16.243654822335024
+      },
+      {
+        "category_id": "travel_transport",
+        "label": "Travel & transport",
+        "tasks": 25,
+        "percentage": 12.690355329949238
+      },
+      {
+        "category_id": "shopping_services",
+        "label": "Shopping & services",
+        "tasks": 21,
+        "percentage": 10.65989847715736
+      },
+      {
+        "category_id": "sports_entertainment",
+        "label": "Sports & entertainment",
+        "tasks": 19,
+        "percentage": 9.644670050761421
+      },
+      {
+        "category_id": "health_lifestyle",
+        "label": "Health & lifestyle",
+        "tasks": 16,
+        "percentage": 8.121827411167512
+      },
+      {
+        "category_id": "government_law",
+        "label": "Government & law",
+        "tasks": 13,
+        "percentage": 6.598984771573604
+      },
+      {
+        "category_id": "finance_property",
+        "label": "Finance & property",
+        "tasks": 11,
+        "percentage": 5.583756345177665
+      },
+      {
+        "category_id": "news_information",
+        "label": "News & information",
+        "tasks": 11,
+        "percentage": 5.583756345177665
+      }
+    ]
+  },
+  "examples": [
+    {
+      "task_id": "vts-048-arxiv-reinforcement-learning-cs-math-dates",
+      "task": "On arxiv.org, use Advanced Search to search all fields for reinforcement learning. Select both Computer Science and Mathematics, with no other subject areas, and filter by the most recent submission date from September 1, 2024 through January 31, 2025. Submit the search and leave the results page open.",
+      "website": "https://arxiv.org/",
+      "source": "Online-Mind2Web",
+      "title": {
+        "en": "arXiv advanced search",
+        "zh": "arXiv 高级搜索"
+      },
+      "kind": {
+        "en": "Browser state",
+        "zh": "浏览器状态"
+      },
+      "checks": [
+        {
+          "name": "on_target_page",
+          "title": {
+            "en": "Open Advanced Search results",
+            "zh": "打开高级搜索结果页"
+          },
+          "result_getter": "final_url",
+          "reference_getter": "const",
+          "metric": "url_pattern_match",
+          "requires": []
+        },
+        {
+          "name": "query_subjects_and_submission_dates",
+          "title": {
+            "en": "Match query, subjects, and submission dates",
+            "zh": "匹配关键词、学科和提交日期"
+          },
+          "result_getter": "url_parse",
+          "reference_getter": "const",
+          "metric": "json_object_match",
+          "requires": []
+        },
+        {
+          "name": "results_or_explicit_empty_result_loaded",
+          "title": {
+            "en": "Load results or an explicit empty result",
+            "zh": "结果列表或明确的空结果已加载"
+          },
+          "result_getter": "page_text",
+          "reference_getter": "const",
+          "metric": "url_pattern_match",
+          "requires": []
+        }
+      ],
+      "task_href": "assets/benchmark/tasks/vts-048-arxiv-reinforcement-learning-cs-math-dates.json",
+      "function_href": "assets/benchmark/functions/vts-048.py",
+      "function_name": "evaluate_arxiv_filters",
+      "function_code": "from pathlib import Path\nfrom core.evaluator import score_evidence\n\n\ndef evaluate_arxiv_filters(evidence, record, task_dir):\n    return score_evidence(\n        SPEC, evidence=evidence, record=record,\n        task=TASK, task_dir=Path(task_dir),\n    )\n\n\n# Complete original evaluator specification.\nSPEC = {'spec_version': '1',\n 'conj': 'and',\n 'checks': [{'name': 'on_target_page',\n             'metric': 'url_pattern_match',\n             'result': {'type': 'final_url'},\n             'expected': {'type': 'const',\n                          'value': '^https://arxiv\\\\.org/search/advanced/?(?:[?#]|$)'}},\n            {'name': 'query_subjects_and_submission_dates',\n             'metric': 'json_object_match',\n             'result': {'type': 'url_parse',\n                        'parse_keys': ['terms-0-term',\n                                       'terms-0-field',\n                                       'classification-computer_science',\n                                       'classification-mathematics',\n                                       'date-filter_by',\n                                       'date-from_date',\n                                       'date-to_date',\n                                       'date-date_type',\n                                       'terms-1-term',\n                                       'classification-physics',\n                                       'classification-quantitative_biology',\n                                       'classification-quantitative_finance',\n                                       'classification-statistics',\n                                       'classification-economics',\n                                       'classification-electrical_engineering_and_systems_science']},\n             'expected': {'type': 'const',\n                          'value': {'terms-0-term': {'re': '^\\\\s*\"?reinforcement '\n                                                           'learning\"?\\\\s*$',\n                                                     'flags': 'I'},\n                                    'terms-0-field': {'eq': 'all'},\n                                    'classification-computer_science': {'eq': 'y'},\n                                    'classification-mathematics': {'eq': 'y'},\n                                    'date-filter_by': {'eq': 'date_range'},\n                                    'date-from_date': {'eq': '2024-09-01'},\n                                    'date-to_date': {'eq': '2025-01-31'},\n                                    'date-date_type': {'eq': 'submitted_date'},\n                                    'terms-1-term': {'any': [{'exists': False},\n                                                             {'eq': ''}]},\n                                    'classification-physics': {'any': [{'exists': False},\n                                                                       {'eq': ''}]},\n                                    'classification-quantitative_biology': {'any': [{'exists': False},\n                                                                                    {'eq': ''}]},\n                                    'classification-quantitative_finance': {'any': [{'exists': False},\n                                                                                    {'eq': ''}]},\n                                    'classification-statistics': {'any': [{'exists': False},\n                                                                          {'eq': ''}]},\n                                    'classification-economics': {'any': [{'exists': False},\n                                                                         {'eq': ''}]},\n                                    'classification-electrical_engineering_and_systems_science': {'any': [{'exists': False},\n                                                                                                          {'eq': ''}]}}}},\n            {'name': 'results_or_explicit_empty_result_loaded',\n             'metric': 'url_pattern_match',\n             'result': {'type': 'page_text'},\n             'expected': {'type': 'const',\n                          'value': ['(?:Search Results|Showing\\\\s+\\\\d|Sorry, your '\n                                    'query|No results)',\n                                    'reinforcement learning']}}]}\n\nTASK = {'task_id': 'vts-048-arxiv-reinforcement-learning-cs-math-dates',\n 'task_name': 'On arxiv.org, use Advanced Search to search all fields for '\n              'reinforcement learning. Select both Computer Science and Mathematics, '\n              'with no other subject areas, and filter by the most recent submission '\n              'date from September 1, 2024 through January 31, 2025. Submit the search '\n              'and leave the results page open.',\n 'website': 'https://arxiv.org/'}\n",
+      "source_task_sha256": "b2fd918f0d7f189abb8c61165d39267eab1ed5b2b758096ffff4cf22d3bf16a7",
+      "function_sha256": "4d881e7dc2205e3649bc1bc35064fe7d61b1f7465ae5a50cadb5b905a0b69ba0"
+    },
+    {
+      "task_id": "vts-060-weathernetwork-10019-current-temperature",
+      "task": "On theweathernetwork.com, look up the current temperature for ZIP code 10019. Leave the resulting Current Weather page open. Return only a JSON object with string fields \"temperature\" (the current temperature number, without the degree symbol) and \"unit\" (\"C\" or \"F\" as displayed).",
+      "website": "https://www.theweathernetwork.com/",
+      "source": "Online-Mind2Web",
+      "title": {
+        "en": "Read the current temperature",
+        "zh": "读取当前温度"
+      },
+      "kind": {
+        "en": "Dynamic reference",
+        "zh": "动态参考"
+      },
+      "checks": [
+        {
+          "name": "target_page",
+          "title": {
+            "en": "Open Manhattan Current Weather",
+            "zh": "打开曼哈顿当前天气页"
+          },
+          "result_getter": "final_url",
+          "reference_getter": "const",
+          "metric": "url_matches",
+          "requires": []
+        },
+        {
+          "name": "current_temperature_loaded",
+          "title": {
+            "en": "Read a numeric temperature and displayed unit",
+            "zh": "读取数值温度与页面单位"
+          },
+          "result_getter": "dom_extract",
+          "reference_getter": "const",
+          "metric": "json_object_match",
+          "requires": [
+            "target_page"
+          ]
+        },
+        {
+          "name": "answer_matches_live_temperature_and_unit",
+          "title": {
+            "en": "Match the answer to the captured page values",
+            "zh": "答案与采集的页面值一致"
+          },
+          "result_getter": "agent_answer",
+          "reference_getter": "dom_extract",
+          "metric": "answer_match",
+          "requires": [
+            "target_page"
+          ]
+        }
+      ],
+      "task_href": "assets/benchmark/tasks/vts-060-weathernetwork-10019-current-temperature.json",
+      "function_href": "assets/benchmark/functions/vts-060.py",
+      "function_name": "evaluate_current_temperature",
+      "function_code": "from pathlib import Path\nfrom core.evaluator import score_evidence\n\n\ndef evaluate_current_temperature(evidence, record, task_dir):\n    return score_evidence(\n        SPEC, evidence=evidence, record=record,\n        task=TASK, task_dir=Path(task_dir),\n    )\n\n\n# Complete original evaluator specification.\nSPEC = {'spec_version': '1',\n 'conj': 'and',\n 'checks': [{'name': 'target_page',\n             'metric': 'url_matches',\n             'result': {'type': 'final_url'},\n             'expected': {'type': 'const',\n                          'value': 'https://www.theweathernetwork.com/en/city/us/new-york/manhattan/current'}},\n            {'name': 'current_temperature_loaded',\n             'metric': 'json_object_match',\n             'requires': ['target_page'],\n             'result': {'type': 'dom_extract',\n                        'selectors': {'temperature': '[data-testid=\"temperature-text\"]',\n                                      'unit': '[data-testid=\"temperature-unit\"]'},\n                        'must_exist': ['temperature', 'unit']},\n             'expected': {'type': 'const',\n                          'value': {'temperature': {'re': '^-?\\\\d+(?:\\\\.\\\\d+)?$'},\n                                    'unit': {'in': ['C', 'F']}}}},\n            {'name': 'answer_matches_live_temperature_and_unit',\n             'metric': 'answer_match',\n             'requires': ['target_page'],\n             'result': {'type': 'agent_answer'},\n             'expected': {'type': 'dom_extract',\n                          'selectors': {'temperature': '[data-testid=\"temperature-text\"]',\n                                        'unit': '[data-testid=\"temperature-unit\"]'},\n                          'must_exist': ['temperature', 'unit']}}]}\n\nTASK = {'task_id': 'vts-060-weathernetwork-10019-current-temperature',\n 'task_name': 'On theweathernetwork.com, look up the current temperature for ZIP code '\n              '10019. Leave the resulting Current Weather page open. Return only a '\n              'JSON object with string fields \"temperature\" (the current temperature '\n              'number, without the degree symbol) and \"unit\" (\"C\" or \"F\" as '\n              'displayed).',\n 'website': 'https://www.theweathernetwork.com/'}\n",
+      "source_task_sha256": "6c97ecac14662a1abad547dea039832def31eea24f48d1cb70e4528920ec81af",
+      "function_sha256": "7932eed81990ec9c3423c52feb9fb94ead10f9205e0d2d6905a708a3ec5e9ced"
+    },
+    {
+      "task_id": "vts-066-webvoyager-wolfram-alpha-21",
+      "task": "Calculate (1+0.1*i)^8 + (1−0.2*i)^8  where i is a complex number. Use wolframalpha.com as the source.",
+      "website": "https://www.wolframalpha.com/",
+      "source": "WebVoyager",
+      "title": {
+        "en": "Compute a complex number",
+        "zh": "计算复数表达式"
+      },
+      "kind": {
+        "en": "Math and history",
+        "zh": "数学与交互历史"
+      },
+      "checks": [
+        {
+          "name": "evaluated_complex_value",
+          "title": {
+            "en": "Match the evaluated complex number",
+            "zh": "匹配计算后的复数值"
+          },
+          "result_getter": "agent_answer",
+          "reference_getter": "const",
+          "metric": "math_value_match",
+          "requires": []
+        },
+        {
+          "name": "wolframalpha_calculated_result_seen",
+          "title": {
+            "en": "Observe the computed result on Wolfram Alpha",
+            "zh": "历史记录中出现 Wolfram Alpha 计算结果"
+          },
+          "result_getter": "snapshot_history",
+          "reference_getter": "const",
+          "metric": "history_presence_match",
+          "requires": []
+        }
+      ],
+      "task_href": "assets/benchmark/tasks/vts-066-webvoyager-wolfram-alpha-21.json",
+      "function_href": "assets/benchmark/functions/vts-066.py",
+      "function_name": "evaluate_complex_number",
+      "function_code": "from pathlib import Path\nfrom core.evaluator import score_evidence\n\n\ndef evaluate_complex_number(evidence, record, task_dir):\n    return score_evidence(\n        SPEC, evidence=evidence, record=record,\n        task=TASK, task_dir=Path(task_dir),\n    )\n\n\n# Complete original evaluator specification.\nSPEC = {'spec_version': '1',\n 'conj': 'and',\n 'checks': [{'name': 'evaluated_complex_value',\n             'metric': 'math_value_match',\n             'result': {'type': 'agent_answer'},\n             'expected': {'type': 'const', 'value': [0.71718257, -0.4252584]},\n             'options': {'tol': 2e-06,\n                         'complex_required': True,\n                         'exclude_expressions': ['(1+0.1*i)^8+(1-0.2*i)^8',\n                                                 '(1+0.1i)^8+(1-0.2i)^8']}},\n            {'name': 'wolframalpha_calculated_result_seen',\n             'metric': 'history_presence_match',\n             'result': {'type': 'snapshot_history',\n                        'url_pattern': '^https://(?:www\\\\.)?wolframalpha\\\\.com(?:/|$)',\n                        'all_tabs': True,\n                        'expression': '(() => {\\n'\n                                      ' const '\n                                      \"numeric='[+-]?(?:\\\\\\\\d+(?:\\\\\\\\.\\\\\\\\d+)?|\\\\\\\\.\\\\\\\\d+)(?:[eE][+-]?\\\\\\\\d+)?';\\n\"\n                                      ' const re=new '\n                                      \"RegExp('('+numeric+')(?:\\\\\\\\.{3}|…)?\\\\\\\\s*([+\\\\\\\\-])\\\\\\\\s*('+numeric+')(?:\\\\\\\\.{3}|…)?\\\\\\\\s*\\\\\\\\*?\\\\\\\\s*[ij]\\\\\\\\b','i');\\n\"\n                                      ' const '\n                                      \"complex_images=Array.from(document.querySelectorAll('img[alt]')).map(img=>{\\n\"\n                                      \"  const alt=img.getAttribute('alt')||'';\\n\"\n                                      '  const '\n                                      \"normalized=alt.replace(/−/g,'-').replace(/\\\\\\\\n/g,' \"\n                                      \"').replace(/\\\\s+/g,' ');\\n\"\n                                      '  const m=normalized.match(re);\\n'\n                                      '  if(!m) return null;\\n'\n                                      '  return '\n                                      \"{alt,real:Number(m[1]),imag:(m[2]==='-'?-1:1)*Number(m[3]),source_url:location.href,rendered:img.getClientRects().length>0};\\n\"\n                                      ' }).filter(Boolean);\\n'\n                                      ' return '\n                                      \"{body_present:document.body?'body':null,complex_images};\\n\"\n                                      '})()',\n                        'must_exist': ['body_present']},\n             'expected': {'type': 'const',\n                          'value': {'path': 'snapshots[*].pages[*].facts.complex_images[*]',\n                                    'rules': {'real': {'approx': 0.71718257,\n                                                       'tol': 2e-06},\n                                              'imag': {'approx': -0.4252584,\n                                                       'tol': 2e-06},\n                                              'source_url': {'re': '^https://(?:www\\\\.)?wolframalpha\\\\.com(?:/|$)'},\n                                              'rendered': True},\n                                    'spec_version': 1}}}]}\n\nTASK = {'task_id': 'vts-066-webvoyager-wolfram-alpha-21',\n 'task_name': 'Calculate (1+0.1*i)^8 + (1−0.2*i)^8  where i is a complex number. Use '\n              'wolframalpha.com as the source.',\n 'website': 'https://www.wolframalpha.com/'}\n",
+      "source_task_sha256": "17d5327325c441a98ad57811203cf14b90166356d14a7d83340858e0879ae003",
+      "function_sha256": "b99cd14dc4d79688b00470782e72bc773fab8448a1aa0273ea2687b892d456db"
+    },
+    {
+      "task_id": "vts-155-apple-password-help",
+      "task": "On support.apple.com, open the official article \"If you forgot your Apple Account password\" and leave the loaded article in the current tab. Do not begin an account reset.",
+      "website": "https://www.apple.com/",
+      "source": "WebVoyager",
+      "title": {
+        "en": "Read help without starting a reset",
+        "zh": "阅读帮助但不启动重置"
+      },
+      "kind": {
+        "en": "History constraint",
+        "zh": "历史约束"
+      },
+      "checks": [
+        {
+          "name": "target_page",
+          "title": {
+            "en": "Open the official support article",
+            "zh": "打开官方支持文章"
+          },
+          "result_getter": "final_url",
+          "reference_getter": "const",
+          "metric": "url_pattern_match",
+          "requires": []
+        },
+        {
+          "name": "loaded_content",
+          "title": {
+            "en": "Confirm the article body has loaded",
+            "zh": "确认文章正文已加载"
+          },
+          "result_getter": "dom_snapshot",
+          "reference_getter": "const",
+          "metric": "json_object_match",
+          "requires": [
+            "target_page"
+          ]
+        },
+        {
+          "name": "no_account_reset",
+          "title": {
+            "en": "Keep the account-reset site unopened",
+            "zh": "历史记录中未进入账户重置站点"
+          },
+          "result_getter": "snapshot_history",
+          "reference_getter": "const",
+          "metric": "history_absence_match",
+          "requires": []
+        }
+      ],
+      "task_href": "assets/benchmark/tasks/vts-155-apple-password-help.json",
+      "function_href": "assets/benchmark/functions/vts-155.py",
+      "function_name": "evaluate_support_article",
+      "function_code": "from pathlib import Path\nfrom core.evaluator import score_evidence\n\n\ndef evaluate_support_article(evidence, record, task_dir):\n    return score_evidence(\n        SPEC, evidence=evidence, record=record,\n        task=TASK, task_dir=Path(task_dir),\n    )\n\n\n# Complete original evaluator specification.\nSPEC = {'spec_version': '1',\n 'conj': 'and',\n 'checks': [{'name': 'target_page',\n             'metric': 'url_pattern_match',\n             'result': {'type': 'final_url'},\n             'expected': {'type': 'const',\n                          'value': '^https://support\\\\.apple\\\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?102656/?(?:[?#].*)?$'}},\n            {'name': 'loaded_content',\n             'metric': 'json_object_match',\n             'result': {'type': 'dom_snapshot',\n                        'expression': '(() => {const norm=e => (e?.innerText || '\n                                      \"'').replace(/\\\\s+/g,' ').trim(); const shown=e \"\n                                      '=> !!e && e.getClientRects().length>0 && '\n                                      \"getComputedStyle(e).visibility!=='hidden'; \"\n                                      'const many=(r,s)=>r ? '\n                                      '[...r.querySelectorAll(s)].filter(shown):[];const '\n                                      'root=document.querySelector(\"#content '\n                                      '#sections\"); const base={root_tag:root?.tagName '\n                                      \"|| null,title:norm(many(root,'h1')[0])}; const \"\n                                      \"sections=many(root,'h2,h3').map(h=>{let \"\n                                      'n=h.nextElementSibling,parts=[];for(;n&&!/^H[123]$/.test(n.tagName);n=n.nextElementSibling)if(shown(n))parts.push(norm(n));return '\n                                      \"{title:norm(h),body_chars:parts.join(' \"\n                                      \"').length};});const \"\n                                      \"reset=many(root,'a[href]').filter(a=>{try{return \"\n                                      'new '\n                                      \"URL(a.href).hostname==='iforgot.apple.com'}catch{return \"\n                                      'false}}).map(a=>({text:norm(a),url:a.href}));return '\n                                      \"{...base,sections,loaded_sections:sections.filter(s=>s.title&&s.body_chars>=80).length,instruction_items:many(root,'ol \"\n                                      '> '\n                                      \"li').filter(e=>norm(e)).length,reset_links:reset};})()\",\n                        'url_pattern': '^https://support\\\\.apple\\\\.com/(?:[a-z]{2}(?:-[a-z]{2})?/)?102656/?(?:[?#].*)?$',\n                        'must_exist': ['root_tag'],\n                        'all_tabs': False},\n             'expected': {'type': 'const',\n                          'value': {'pages[0].facts.title': {'re': '^If you forgot '\n                                                                   'your Apple Account '\n                                                                   'password$'},\n                                    'pages[0].facts.loaded_sections': {'ge': 1},\n                                    'pages[0].facts.instruction_items': {'ge': 1}}},\n             'requires': ['target_page']},\n            {'name': 'no_account_reset',\n             'metric': 'history_absence_match',\n             'result': {'type': 'snapshot_history',\n                        'url_pattern': '.*',\n                        'all_tabs': True,\n                        'expression': '(() => ({observed: typeof location.href === '\n                                      \"'string', forbidden: \"\n                                      '/(^|\\\\.)iforgot\\\\.apple\\\\.com$/i.test(location.hostname), '\n                                      'url: location.href}))()',\n                        'must_exist': ['url']},\n             'expected': {'type': 'const',\n                          'value': {'spec_version': 1,\n                                    'forbidden_rules': {'facts.forbidden': {'eq': True}},\n                                    'coverage_rules': {'facts.observed': {'eq': True},\n                                                       'facts.forbidden': {'eq': False}}}}}]}\n\nTASK = {'task_id': 'vts-155-apple-password-help',\n 'task_name': 'On support.apple.com, open the official article \"If you forgot your '\n              'Apple Account password\" and leave the loaded article in the current '\n              'tab. Do not begin an account reset.',\n 'website': 'https://www.apple.com/'}\n",
+      "source_task_sha256": "412bf083dad7d3fa6687991c532fe623229a55281b69beeb71db44e120a13a63",
+      "function_sha256": "e55622019a2c36413bddc569b4c1e4d4a0bdfa9e5400dc1c5b6a55760a80c9e7"
+    },
+    {
+      "task_id": "vts-083-webgym-300019",
+      "task": "Find the date of Reach plc's 2024 Annual Report & Accounts publication.",
+      "website": "https://www.trinitymirror.com",
+      "source": "WebGym",
+      "title": {
+        "en": "Find an annual-report publication date",
+        "zh": "查找年报发布日期"
+      },
+      "kind": {
+        "en": "Static reference",
+        "zh": "固定参考"
+      },
+      "checks": [
+        {
+          "name": "report_publication_date",
+          "title": {
+            "en": "Match the report publication date",
+            "zh": "匹配年报发布日期"
+          },
+          "result_getter": "agent_answer",
+          "reference_getter": "const",
+          "metric": "answer_match",
+          "requires": []
+        }
+      ],
+      "task_href": "assets/benchmark/tasks/vts-083-webgym-300019.json",
+      "function_href": "assets/benchmark/functions/vts-083.py",
+      "function_name": "evaluate_report_date",
+      "function_code": "from pathlib import Path\nfrom core.evaluator import score_evidence\n\n\ndef evaluate_report_date(evidence, record, task_dir):\n    return score_evidence(\n        SPEC, evidence=evidence, record=record,\n        task=TASK, task_dir=Path(task_dir),\n    )\n\n\n# Complete original evaluator specification.\nSPEC = {'spec_version': '1',\n 'conj': 'and',\n 'checks': [{'name': 'report_publication_date',\n             'metric': 'answer_match',\n             'result': {'type': 'agent_answer'},\n             'expected': {'type': 'const',\n                          'value': {'.': {'re': '(?<![0-9])(?:18(?:th)?[\\\\s,./-]+(?:of\\\\s+)?Mar(?:ch)?\\\\.?[\\\\s,./-]+2025|Mar(?:ch)?\\\\.?[\\\\s,./-]+18(?:th)?[\\\\s,./-]+2025|2025[-/.]0?3[-/.]18|18[-/.]0?3[-/.]2025|0?3[-/.]18[-/.]2025|2025\\\\s*年\\\\s*0?3\\\\s*月\\\\s*18\\\\s*日)(?![0-9])',\n                                          'flags': 'I'}}}}]}\n\nTASK = {'task_id': 'vts-083-webgym-300019',\n 'task_name': \"Find the date of Reach plc's 2024 Annual Report & Accounts publication.\",\n 'website': 'https://www.trinitymirror.com'}\n",
+      "source_task_sha256": "fac0d02805e24d32b66cb9444a2a99863a8c642b4c830938a5891c3d64e6d5f3",
+      "function_sha256": "d3ce2ec1c3b67246fc2c1dff336d115ab450cb02d07e87d5a47a6865a240c9ee"
+    }
+  ]
+}
