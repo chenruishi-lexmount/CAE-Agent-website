@@ -8,7 +8,7 @@
   const reduced = matchMedia('(prefers-reduced-motion: reduce)');
   const strings = {
     en: {
-      nav:'Cases', heading:'Explore more cases with CAE Agent',
+      previous_case:'Previous case', next_case:'Next case', case_count:'Case {n} / {total}', case_label:'Recorded case: {title}', nav:'Cases', heading:'Explore more cases with CAE Agent',
       lede:'Real saved runs, replayed from page overview to node focus, Action, and Effect. Inspect the full CAE Page and its recorded Delta below.',
       task:'Original task', play:'Play', pause:'Pause', prev:'Previous frame', next:'Next frame', screenshot:'Original screenshot', open:'Open frame ↗',
       content:'Full CAE Page', delta:'Recorded Delta', action:'Action', effect:'Effect', result:'Archived result', initial:'Initial saved page', final:'Final saved frame',
@@ -25,7 +25,7 @@
       restored:'Full page restored from the saved baseline and exact recorded deltas.'
     },
     zh: {
-      nav:'运行案例', heading:'探索 CAE Agent 的真实运行案例',
+      previous_case:'上一个案例', next_case:'下一个案例', case_count:'案例 {n} / {total}', case_label:'真实案例：{title}', nav:'运行案例', heading:'探索 CAE Agent 的真实运行案例',
       lede:'真实记录回放：完整页面 → 聚焦 node → Action → Effect。右侧保留完整 CAE Page 与记录中的 Delta。',
       task:'原始任务', play:'播放', pause:'暂停', prev:'上一帧', next:'下一帧', screenshot:'原始网页截图', open:'打开原图 ↗',
       content:'完整 CAE Page', delta:'记录中的 Delta', action:'Action', effect:'Effect', result:'归档结果', initial:'初始保存页面', final:'最终保存画面',
@@ -133,11 +133,11 @@
     camera={node,area,zoom};
     root.querySelectorAll('[data-case-copy]').forEach(el=>el.textContent=tr(el.dataset.caseCopy));
     document.querySelectorAll('[data-case-copy="nav"]').forEach(el=>el.textContent=tr('nav'));
-    root.querySelectorAll('[data-case-select]').forEach((button,i)=>{
-      const item=cases[i];button.setAttribute('aria-pressed',String(i===selected));
-      button.querySelector('.case-choice-title').textContent=item.title[lang()];
-      button.querySelector('.case-choice-meta').textContent=item.model+' · '+item.recorded_date+' · '+tr('count',{n:item.frames.length});
-    });
+    byId('case-example-title').textContent=c.title[lang()];
+    byId('case-example-count').textContent=tr('case_count',{n:selected+1,total:cases.length});
+    byId('case-example-prev').setAttribute('aria-label',tr('previous_case'));
+    byId('case-example-next').setAttribute('aria-label',tr('next_case'));
+    byId('case-player').setAttribute('aria-label',tr('case_label',{title:c.title[lang()]}));
     byId('case-task-text').textContent=c.task;
     byId('case-model').textContent=tr('model',{model:c.model});byId('case-date').textContent=tr('date',{date:c.recorded_date});
     byId('case-verdict').textContent=tr(c.outcome.verdict_source==='script'?'saved':'reviewed');
@@ -167,8 +167,6 @@
     byId('case-counter').textContent=tr('frame',{n:index+1,total:c.frames.length});range.max=String(c.frames.length-1);range.value=String(index);
     range.setAttribute('aria-label',tr('range'));range.setAttribute('aria-valuetext',byId('case-counter').textContent);
     byId('case-prev').setAttribute('aria-label',tr('prev'));byId('case-next').setAttribute('aria-label',tr('next'));
-    byId('case-answer-title').textContent=tr('answer');byId('case-answer').textContent=c.result;
-    byId('case-verdict-detail').textContent=tr(c.outcome.verdict_source==='script'?'verdict_script':'verdict_review');byId('case-proof').textContent=c.record_sha256;
     if(manual)byId('case-announce').textContent=c.title[lang()]+' · '+byId('case-counter').textContent+' · '+strings[lang()].stages[phase];
     root.dataset.phase=String(phase);root.dataset.case=c.id;root.dataset.frame=String(index+1);
     // Only a new full baseline is revealed after navigation. Every original row remains in the DOM.
@@ -179,7 +177,9 @@
     requestAnimationFrame(()=>{if(token===renderToken){positionCamera();positionCode(zoom&&oldKey===display.page_ref);}});
     clock();
   }
-  root.querySelectorAll('[data-case-select]').forEach((button,i)=>button.addEventListener('click',()=>{selected=i;index=0;phase=0;wide=false;render(true);}));
+  function selectCase(direction) { selected=(selected+direction+cases.length)%cases.length;index=0;phase=0;wide=false;render(true); }
+  byId('case-example-prev').addEventListener('click',()=>selectCase(-1));
+  byId('case-example-next').addEventListener('click',()=>selectCase(1));
   byId('case-play').addEventListener('click',()=>{choice=!wanted();clock();});
   function step(direction) {choice=false;index=(index+direction+cases[selected].frames.length)%cases[selected].frames.length;phase=index?3:0;wide=false;render(true);}
   byId('case-prev').addEventListener('click',()=>step(-1));byId('case-next').addEventListener('click',()=>step(1));
