@@ -1,0 +1,13 @@
+/* The hero's authored GIF, with a static alternative and explicit playback. */
+.hero-art{padding-top:0}
+.flight-demo{background:#fff;border:1px solid #d8dce7;border-radius:18px;box-shadow:0 20px 55px #24376a15,0 4px 14px #5c4a7e08;overflow:hidden}
+.flight-demo-task{padding:14px 22px;border-bottom:1px solid #e6eaf1;margin:0;background:#fff}
+.flight-demo-task>span{display:block;color:var(--accent);font-size:10px;letter-spacing:.13em;text-transform:uppercase;font-weight:750;margin-bottom:5px;line-height:1.2}
+.flight-demo-task strong{display:block;font-size:16px;line-height:1.45;font-weight:650;color:#26364e}
+.flight-demo img{display:block;width:100%;height:auto;aspect-ratio:480/402;background:#fff}
+.flight-demo-toolbar{min-height:50px;padding:5px 15px 5px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;border-top:1px solid #edf0f5}
+.flight-demo-note{color:#64738a;font-size:10px;line-height:1.5}
+.flight-demo-control{min-height:44px;min-width:110px;padding:7px 11px;border:1px solid #dce2ec;border-radius:7px;background:#fff;color:#263f86;font:inherit;font-size:11px;font-weight:600;line-height:1.4;cursor:pointer}
+.flight-demo-control:hover{background:#f2f5fb}.flight-demo-control:focus-visible{outline:3px solid #879ed3;outline-offset:2px}
+.flight-demo-control[hidden]{display:none}
+@media(max-width:700px){.flight-demo-task{padding:17px 19px 16px}.flight-demo-task strong{font-size:15px}.flight-demo-toolbar{padding-inline:13px 10px}.flight-demo-note{font-size:10px}.flight-demo-control{font-size:11px}}
