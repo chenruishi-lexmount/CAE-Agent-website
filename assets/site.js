@@ -104,33 +104,128 @@ setAblationMetric('success');
   const payload=document.getElementById('representation-data');
   if(!payload)return;
   const examples=JSON.parse(payload.textContent).examples;
+  const alignment=JSON.parse(document.getElementById('representation-alignment-data').textContent).examples;
   const root=document.querySelector('.rep-showcase');
   const byId=id=>document.getElementById(id);
   const dots=Array.from(root.querySelectorAll('[data-rep-index]'));
   const viewTabs=Array.from(root.querySelectorAll('[data-rep-view]'));
   const dialog=byId('rep-dialog');
-  let index=0,hovered=false,focused=false,inView=false,timer=null;
+  let index=0,hovered=false,focused=false,inView=false,timer=null,selectedNode=null;
+  const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
   function clock(){
     clearInterval(timer);timer=null;
-    const running=!hovered&&!focused&&inView&&!document.hidden&&!dialog.open;
+    const running=!hovered&&!focused&&inView&&!document.hidden&&!dialog.open&&!selectedNode;
     if(running)timer=setInterval(()=>show(index+1,false),9000);
   }
-  function renderCode(target,text,cae){
-    const frag=document.createDocumentFragment();
-    const token=cae?/(\[\d+\|[^|]*\|)([^\]]*)(\])/g:/(\[\d+\])|(<[^>]+>)/g;
+  function colorLine(target,text,cae){
+    const token=cae?/(\[\d+\|([^|]*)\|)([^\]]*)(\])/g:/(\[\d+\])|(<[^>]+>)/g;
     let last=0;
     for(const m of text.matchAll(token)){
-      frag.append(document.createTextNode(text.slice(last,m.index)));
+      target.append(document.createTextNode(text.slice(last,m.index)));
       if(cae){
-        const node=document.createElement('span');node.className='rep-node';node.textContent=m[1];frag.append(node);
-        const action=document.createElement('span');action.className='rep-action';action.textContent=m[2];frag.append(action);
-        const end=document.createElement('span');end.className='rep-node';end.textContent=m[3];frag.append(end);
-      }else{const span=document.createElement('span');span.className=m[1]?'rep-node':'rep-tag';span.textContent=m[0];frag.append(span);}
+        const group=document.createElement('span');group.dataset.repNode=m[2];
+        for(const [value,kind] of [[m[1],'node'],[m[3],'action'],[m[4],'node']]){
+          const span=document.createElement('span');span.className='rep-'+kind;span.textContent=value;group.append(span);
+        }
+        target.append(group);
+      }else{const span=document.createElement('span');span.className=m[1]?'rep-node':'rep-tag';span.textContent=m[0];target.append(span);}
       last=m.index+m[0].length;
     }
-    frag.append(document.createTextNode(text.slice(last)));target.replaceChildren(frag);
+    target.append(document.createTextNode(text.slice(last)));
   }
+  function renderCode(target,text,cae){
+    const frag=document.createDocumentFragment();let lineIndex=0,first=true;
+    for(const line of text.match(/[^\n]*\n|[^\n]+$/g)||[]){
+      const row=document.createElement('span');row.className='rep-line';row.dataset.line=lineIndex++;
+      const body=line.endsWith('\n')?line.slice(0,-1):line;colorLine(row,body,cae);
+      if(cae){
+        const ids=Array.from(body.matchAll(/\[\d+\|(\d+)\|/g),m=>m[1]);
+        const node=ids.find(id=>alignment[examples[index].id].nodes[id]);
+        if(node){row.dataset.repTarget=node;row.setAttribute('role','button');row.setAttribute('aria-pressed','false');row.tabIndex=first?0:-1;first=false;}
+      }
+      frag.append(row);if(line.endsWith('\n'))frag.append(document.createTextNode('\n'));
+    }
+    target.replaceChildren(frag);
+  }
+  function centerCode(pre,rows){
+    pre=pre.closest('pre');
+    if(!rows.length||!pre.clientHeight)return;
+    const box=pre.getBoundingClientRect(),first=rows[0].getBoundingClientRect();
+    const top=pre.scrollTop+first.top-box.top-pre.clientHeight/2+first.height/2;
+    pre.scrollTo({top:Math.max(0,top),left:0,behavior:reducedMotion.matches?'instant':'smooth'});
+  }
+  function paintCamera(){
+    const screen=byId('rep-screen-button'),stage=byId('rep-image-stage'),mark=byId('rep-node-highlight');
+    const sample=examples[index],{width:w,height:h}=sample.viewport;
+    const vw=screen.clientWidth,vh=screen.clientHeight;if(!vw||!vh)return;
+    const fit=Math.min((vw-20)/w,(vh-24)/h);
+    const node=alignment[sample.id].nodes[selectedNode],rect=node?.rect;
+    let scale=fit,tx=(vw-w*fit)/2,ty=(vh-h*fit)/2;
+    if(rect){
+      const [x,y,rw,rh]=rect;
+      scale=Math.min(fit*5,Math.max(fit,Math.min((vw-64)/Math.max(rw+48,140),(vh-90)/Math.max(rh+70,100))));
+      tx=Math.max(Math.min(0,vw-w*scale),Math.min(Math.max(0,vw-w*scale),(vw-(2*x+rw)*scale)/2));
+      ty=Math.max(Math.min(0,vh-h*scale),Math.min(Math.max(0,vh-h*scale),(vh-(2*y+rh)*scale)/2));
+      Object.assign(mark.style,{left:x+'px',top:y+'px',width:rw+'px',height:rh+'px',borderWidth:(2/scale)+'px',borderRadius:(4/scale)+'px'});
+    }
+    stage.style.width=w+'px';stage.style.height=h+'px';stage.style.transform=`translate(${tx}px,${ty}px) scale(${scale})`;
+    mark.hidden=!rect;
+    root.dataset.nodeState=selectedNode?(node?.visibility||'unavailable'):'none';
+  }
+  function updateFocusLabels(){
+    const active=!!selectedNode,sample=examples[index],node=alignment[sample.id].nodes[selectedNode];
+    byId('rep-focus-reset').hidden=!active;
+    byId('rep-focus-reset').textContent=tr('rep_reset',{node:selectedNode});
+    byId('rep-focus-note').hidden=!active;
+    let key='rep_focus_visible';
+    if(node?.visibility==='outside')key='rep_focus_outside';
+    else if(!node?.rect)key='rep_focus_unavailable';
+    const message=active?tr(key,{node:selectedNode}):'';
+    byId('rep-focus-note').textContent=message;
+    byId('rep-dom-match').textContent=active?tr(node?.domLines.length?'rep_dom_match':'rep_dom_absent',{node:selectedNode}):'';
+    byId('rep-dom-match').hidden=!active;
+    if(active)byId('rep-status').textContent=message;
+  }
+  function selectNode(id,row){
+    if(selectedNode===id){resetFocus();return;}
+    selectedNode=id;
+    const record=alignment[examples[index].id].nodes[id];
+    const caeRows=Array.from(byId('rep-cae').querySelectorAll('[data-rep-target]'));
+    caeRows.forEach(r=>{const active=!!r.querySelector(`[data-rep-node="${id}"]`);r.classList.toggle('is-linked',active);r.setAttribute('aria-pressed',String(active));r.tabIndex=r===row?0:-1;});
+    const domRows=Array.from(byId('rep-dom').querySelectorAll('.rep-line'));
+    domRows.forEach(r=>r.classList.toggle('is-linked',record.domLines.includes(Number(r.dataset.line))));
+    updateFocusLabels();paintCamera();centerCode(byId('rep-dom'),domRows.filter(r=>r.classList.contains('is-linked')));clock();
+    if(matchMedia('(max-width:700px)').matches){setView('screenshot',true);}
+  }
+  function resetFocus(){
+    selectedNode=null;
+    root.querySelectorAll('.rep-line.is-linked').forEach(row=>row.classList.remove('is-linked'));
+    byId('rep-cae').querySelectorAll('[aria-pressed]').forEach(row=>row.setAttribute('aria-pressed','false'));
+    updateFocusLabels();paintCamera();clock();
+  }
+  byId('rep-cae').addEventListener('click',event=>{
+    const row=event.target.closest('[data-rep-target]');if(!row)return;
+    const token=event.target.closest('[data-rep-node]');
+    const id=token?.dataset.repNode||row.dataset.repTarget;
+    if(alignment[examples[index].id].nodes[id])selectNode(id,row);
+  });
+  byId('rep-cae').addEventListener('keydown',event=>{
+    const row=event.target.closest('[data-rep-target]');if(!row)return;
+    const rows=Array.from(byId('rep-cae').querySelectorAll('[data-rep-target]')),i=rows.indexOf(row);
+    if(event.key==='Enter'||event.key===' '){event.preventDefault();selectNode(row.dataset.repTarget,row);return;}
+    let next;
+    if(event.key==='ArrowDown')next=Math.min(rows.length-1,i+1);
+    else if(event.key==='ArrowUp')next=Math.max(0,i-1);
+    else if(event.key==='Home')next=0;
+    else if(event.key==='End')next=rows.length-1;
+    else return;
+    event.preventDefault();rows.forEach((r,j)=>r.tabIndex=j===next?0:-1);rows[next].focus();
+  });
+  root.addEventListener('keydown',event=>{if(event.key==='Escape'&&selectedNode){event.preventDefault();resetFocus();}});
+  byId('rep-focus-reset').addEventListener('click',resetFocus);
+  new ResizeObserver(()=>paintCamera()).observe(byId('rep-screen-button'));
   function show(next,announce=true){
+    selectedNode=null;
     index=(next+examples.length)%examples.length;
     const sample=examples[index];root.dataset.example=sample.id;
     byId('rep-count').textContent=`${String(index+1).padStart(2,'0')} / ${String(examples.length).padStart(2,'0')}`;
@@ -140,7 +235,7 @@ setAblationMetric('success');
     root.querySelectorAll('.rep-code').forEach(pre=>{pre.scrollTop=0;pre.scrollLeft=0;});
     dots.forEach((dot,i)=>dot.setAttribute('aria-current',String(i===index)));
     root.querySelectorAll('[data-rep-copy]').forEach(b=>b.textContent=tr('copy'));
-    updateSampleLabels();
+    updateSampleLabels();updateFocusLabels();paintCamera();
     if(announce)announceSample();
     clock();
   }
@@ -155,7 +250,7 @@ setAblationMetric('success');
     if(dialog.open){byId('rep-dialog-title').textContent=tr('dialog_title',{title:labels.title});byId('rep-dialog-image').alt=tr('screenshot_alt',{title:labels.title});}
   }
   function announceSample(){byId('rep-status').textContent=tr('carousel_status',{position:index+1,total:examples.length,title:i18n.sample(examples[index]).title});}
-  document.addEventListener('cae:languagechange',()=>{updateSampleLabels();announceSample();});
+  document.addEventListener('cae:languagechange',()=>{updateSampleLabels();updateFocusLabels();if(!selectedNode)announceSample();});
   function manual(next){show(next);}
   byId('rep-prev').addEventListener('click',()=>manual(index-1));
   byId('rep-next').addEventListener('click',()=>manual(index+1));
@@ -175,6 +270,7 @@ setAblationMetric('success');
   }));
   function setView(name,focus=false){
     root.dataset.view=name;
+    requestAnimationFrame(()=>{paintCamera();const rows=Array.from(byId('rep-dom').querySelectorAll('.is-linked'));centerCode(byId('rep-dom'),rows);});
     viewTabs.forEach(tab=>{const selected=tab.dataset.repView===name;tab.setAttribute('aria-selected',String(selected));tab.tabIndex=selected?0:-1;if(selected&&focus)tab.focus();});
   }
   viewTabs.forEach((tab,i)=>{
